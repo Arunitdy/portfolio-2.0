@@ -67,23 +67,8 @@
     text-decoration: underline;
 }
 
-/* Smooth Infinite Scroll */
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .projects-scroll {
-        animation: none; /* Disable auto-scroll on mobile */
-    }
-
-    .projects-wrapper {
-        overflow-x: scroll;
-    }
+  
 }
