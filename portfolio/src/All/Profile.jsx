@@ -25,15 +25,15 @@ export const Profile = () => {
             <div className = "header">
                 <h1>ARUN M</h1>
                 <div className="menu">
-                    <a href="#"><button className="menu_ele">Home</button></a>
-                    <a href="#"><button className="menu_ele">About</button></a>
-                    <a href="#"><button className="menu_ele">Skill</button></a>
-                    <a href="#"><button className="menu_ele">Projects</button></a>
-                    <a href="#"><button className="menu_ele">Contact</button></a>
+                    <a href="#home"><button className="menu_ele">Home</button></a>
+                    <a href="#about"><button className="menu_ele">About</button></a>
+                    <a href="#skills"><button className="menu_ele">Skill</button></a>
+                    <a href="#projects"><button className="menu_ele">Projects</button></a>
+                    <a href="#contact"><button className="menu_ele">Contact</button></a>
                 </div>
             </ div>
 
-            <div className="Home">
+            <div id ="home" className="Home">
                 <div className="Home_right right">
                     <div  className="Profile_wrapper">
                         <img className = "Profile_img" src={ProfileImg} alt="profile img" />
@@ -64,7 +64,7 @@ export const Profile = () => {
                 </div>
             </div>
 
-            <div className="About">
+            <div id= "about" className="About">
                 <h1>About <span>Me</span></h1>
                 <p className="text-center ">
                     My journey in programming has been exciting! Here’s a quick look at my progress over the years:
@@ -82,11 +82,11 @@ export const Profile = () => {
                 </div>
             </div>
 
-            <div className="skill"><Skills/></div>
+            <div id = "skills"className="skill"><Skills/></div>
 
-            <div className="projects"> <Projects/> </div>
+            <div id = "projects"className="projects"> <Projects/> </div>
 
-            <div className="footer">
+            <div id ="contact" className="footer">
                 <div className="footer-container">
                     <div className="contact-info">
                         <h2>Contact Information</h2>
