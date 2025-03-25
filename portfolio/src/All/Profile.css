@@ -246,6 +246,10 @@
 }
 
 @media (max-width: 768px) { 
+        
+    .header h1 {
+        display:none;
+    }
     .Home {
         grid-template-columns: 1fr;
     }
