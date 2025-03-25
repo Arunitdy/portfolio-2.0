@@ -75,7 +75,7 @@ export const Profile = () => {
                     </div>
                     <div className="view_conect">
                         <a href="#"><button className="view">View My Work</button></a>
-                        <a href="#"><button className="connect">Connect Me</button></a>
+                        <a href=                 "https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
                     </div>
                     <div className="social">
                         <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
