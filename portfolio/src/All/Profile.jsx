@@ -1,17 +1,20 @@
 import {useState, useEffect} from "react"
 import ProfileImg from "./ProfileImg.jpg";
+import { motion } from "framer-motion";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import "./Profile.css";
 
 export const Profile = () => {
 
     const [currentTime, setCurrentTime] = useState(new Date());
+    
+
     const timeline = [
-        { year: "2022", text: "Started learning **C Programming** as the foundation of my coding journey." },
-        { year: "2023", text: "Explored **Data Structures & Algorithms (DSA)**, **Java**, and **Object-Oriented Programming (OOP)** to strengthen problem-solving skills." },
-        { year: "2024", text: "Dived into databases, learning **MySQL** and **DBMS**. Started front-end development with **JavaScript** and **React.js**." },
-        { year: "2025", text: "Expanding full-stack skills with **Firebase** and **Express.js** for backend development." },
-      ];
+      { year: "2022", skill: "C Programming", description: "Started learning foundational programming concepts." },
+      { year: "2023", skill: "DSA, Java, OOP", description: "Dived into problem-solving with Java & Object-Oriented Programming." },
+      { year: "2024", skill: "MySQL, DBMS, JavaScript, React", description: "Explored databases & front-end development." },
+      { year: "2025", skill: "Firebase, Express.js", description: "Learning backend development with cloud services." },
+    ];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -65,6 +68,42 @@ export const Profile = () => {
             <div className="About">
                 <h1>About <span>Me</span></h1>
                 <p>My journey as a developer and the path that led me to where I am today</p>
+                
+    <div className="max-w-5xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-6 text-purple-600">About Me</h2>
+      <p className="text-center text-gray-700 mb-8">
+        My journey in programming has been exciting! Here’s a quick look at my progress over the years:
+      </p>
+
+      <div className="relative flex items-center">
+        {/* Animated Line */}
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 2, ease: "easeInOut" }}
+          className="absolute top-1/2 left-0 h-1 bg-purple-500"
+          style={{ width: "100%" }}
+        ></motion.div>
+
+        {/* Timeline Points */}
+        <div className="flex justify-between w-full relative">
+          {timeline.map((item, index) => (
+            <div key={index} className="relative flex flex-col items-center">
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: index * 0.5, duration: 0.5 }}
+                className="w-6 h-6 bg-purple-600 rounded-full border-4 border-white shadow-lg"
+              ></motion.div>
+              <h3 className="text-lg font-semibold text-purple-600 mt-4">{item.year}</h3>
+              <p className="text-gray-700 text-center px-4">
+                <strong className="text-purple-700">{item.skill}</strong> – {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
             </div>
             <div className="skill"></div>
             <div className="projects"></div>
