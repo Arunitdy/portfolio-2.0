@@ -70,7 +70,7 @@ export const Profile = () => {
                         <input type="text" placeholder="Your Name" required />
                         <input type="email" placeholder="Your Email" required />
                         <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
-                        <button type="submit">Send Message 🚀</button>
+                        <button type="submit">Send Message</button>
                     </form>
                     </div>
                 </div>
