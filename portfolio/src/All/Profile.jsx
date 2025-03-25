@@ -6,6 +6,26 @@ import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
 import "./Profile.css";
 
+const sendMail = (event) => {
+    event.preventDefault(); 
+
+    const name = document.querySelector("input[type='text']").value.trim();
+    const email = document.querySelector("input[type='email']").value.trim();
+    const message = document.querySelector("textarea").value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill in all fields before sending.");
+        return;
+    }
+
+    console.log("Mail Sent:", { name, email, message });
+
+    alert("Your message has been sent successfully!");
+
+    document.querySelector("form").reset();
+};
+
+
 export const Profile = () => {
 
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -116,7 +136,7 @@ export const Profile = () => {
                             <input type="text" placeholder="Your Name" required />
                             <input type="email" placeholder="Your Email" required />
                             <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
-                            <button type="submit">Send Message</button>
+                            <button type="submit" onClick={sendMail}>Send Message</button>
                         </form>
                         <p className="time">
                             {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
