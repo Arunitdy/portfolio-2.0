@@ -169,12 +169,23 @@
 /* About */
 
 .About {
-    background-color: #6a5acd;
+    background-color:white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10vw 0vw;
     padding: 1vw;
+}
+.About h1 {
+    color: black;
+    margin-bottom: 0px;
+}
+
+.About h1 span{
+    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Footer */

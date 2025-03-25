@@ -6,14 +6,20 @@ import "./Profile.css";
 export const Profile = () => {
 
     const [currentTime, setCurrentTime] = useState(new Date());
+    const timeline = [
+        { year: "2022", text: "Started learning **C Programming** as the foundation of my coding journey." },
+        { year: "2023", text: "Explored **Data Structures & Algorithms (DSA)**, **Java**, and **Object-Oriented Programming (OOP)** to strengthen problem-solving skills." },
+        { year: "2024", text: "Dived into databases, learning **MySQL** and **DBMS**. Started front-end development with **JavaScript** and **React.js**." },
+        { year: "2025", text: "Expanding full-stack skills with **Firebase** and **Express.js** for backend development." },
+      ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setCurrentTime(new Date());
+        }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+        return () => clearInterval(interval);
+    }, []);
 
     return (<>
         <div className="profile">
@@ -58,6 +64,7 @@ export const Profile = () => {
             </div>
             <div className="About">
                 <h1>About <span>Me</span></h1>
+                <p>My journey as a developer and the path that led me to where I am today</p>
             </div>
             <div className="skill"></div>
             <div className="projects"></div>
