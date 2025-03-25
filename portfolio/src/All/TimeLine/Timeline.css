@@ -59,7 +59,7 @@
 
 @media (max-width: 768px) { 
     .timeline-content {
-        width: 80vw;
+        width:80vw
     }
     .timeline_c {
         flex-direction: column;
