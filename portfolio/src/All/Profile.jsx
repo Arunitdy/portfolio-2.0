@@ -39,6 +39,7 @@ export const Profile = () => {
                     </div>
                 </div>
                 <div className = "Home_left">
+                    <div className="Hello">Hello, my name is</div>
                     <h1>Arun M</h1>
                     <h2>Frontend Developer</h2>
                     <div className="Home_about">
