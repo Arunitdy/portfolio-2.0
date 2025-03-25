@@ -4,10 +4,17 @@ import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
-import { emailjs } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+
 import "./Profile.css";
 
-function sendmail(a) {
+function sendMail(a) {
+    console.log(a);
+    (function(){
+        emailjs.init({
+          publicKey: "v1NuNxKifUW2QtRAC",
+         });
+        })();
     let parms = {
         name: "soul",
         email: "arunmundakkal2003@gmail.com",
@@ -132,11 +139,11 @@ export const Profile = () => {
 
                     <div className="contact-form">
                         <h2>Send Me a Message</h2>
-                        <form>
+                        <form onSubmit={sendMail}>
                             <input type="text" placeholder="Your Name" required />
                             <input type="email" placeholder="Your Email" required />
                             <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
-                            <button type="submit" onClick={sendMail}>Send Message</button>
+                            <button type="submit">Send Message</button>
                         </form>
                         <p className="time">
                             {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
