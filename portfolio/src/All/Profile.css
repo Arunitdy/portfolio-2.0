@@ -169,7 +169,7 @@
 /* About */
 
 .About {
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +187,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.time_line {
+    padding: 100px;
+    background-color: #ff0000;
+}
 /* Footer */
 
 .footer {
