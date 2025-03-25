@@ -24,7 +24,7 @@ const projects = [
     },
     {
       title: "Smart-Energy-Meter ",
-      description: "A food donation and distribution management system.",
+      description: "A smart energy meter using Blynk cloud.",
       techStack: ["React", "Blynk cloud"],
       liveLink: "https://github.com/Arunitdy/Smart-Energy-Meter/blob/main/smartenergymeter",
       githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
