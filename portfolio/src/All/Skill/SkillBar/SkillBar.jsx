@@ -32,7 +32,7 @@ export const SkillBar = () => {
           <div className="scrolling-logos">
             {[...skills, ...skills].map((skill, index) => (
               <div key={index} className="skill-logo">
-                <img src={skill.logo} alt={skill.name} />
+                <img src={skill.logo} alt={skill.name} type="image/svg+xml"  />
               </div>
             ))}
           </div>
