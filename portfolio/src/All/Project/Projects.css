@@ -31,7 +31,11 @@
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    
+    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    .project-links a {
+        color:#291575;
+    }
 }
 
 /* Tech Stack Badges */
@@ -43,7 +47,7 @@
 }
 
 .tech-badge {
-    background: #007bff;
+    background: #291575;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -57,8 +61,8 @@
 
 .project-links a {
     display: inline-block;
-    margin-right: 10px;
-    color: #007bff;
+    margin-right: 40px;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }

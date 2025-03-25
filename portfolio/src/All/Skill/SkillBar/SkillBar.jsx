@@ -1,16 +1,15 @@
 import React from "react";
 import "./SkillBar.css";
 
-import cLogo from "../../logos/c.svg";
-import javaLogo from "../../logos/java.svg";
-import pythonLogo from "../../logos/python.svg";
-import jsLogo from "../../logos/javascript.svg";
-import htmlLogo from "../../logos/html.svg";
-import cssLogo from "../../logos/css.svg";
-import reactLogo from "../../logos/react.svg";
-import mysqlLogo from "../../logos/mysql.svg";
-import firebaseLogo from "../../logos/firebase.svg";
-import viteLogo from "../../../../public/vite.svg";
+import cLogo from "../../logos/png/c.png";
+import javaLogo from "../../logos/png/java.png";
+import pythonLogo from "../../logos/png/python.png";
+import jsLogo from "../../logos/png/javascript.png";
+import htmlLogo from "../../logos/png/html.png";
+import cssLogo from "../../logos/png/css.png";
+import reactLogo from "../../logos/png/react.png";
+import mysqlLogo from "../../logos/png/mysql.png";
+import firebaseLogo from "../../logos/png/firebase.png";
 
 
 const skills = [
@@ -23,7 +22,6 @@ const skills = [
   { name: "React", logo: reactLogo },
   { name: "MySQL", logo: mysqlLogo },
   { name: "Firebase", logo: firebaseLogo },
-  { name: "Vite", logo: viteLogo },
 ];
 
 export const SkillBar = () => {
