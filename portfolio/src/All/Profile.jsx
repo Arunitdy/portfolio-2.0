@@ -70,7 +70,7 @@ export const Profile = () => {
                 </p>
                 <div className="About_content">
                     <div className="WhoIam">
-                        <h2>Who I am</h2>
+                        <h2><span>Who</span> I am</h2>
                         <p>
                             I am a passionate web developer specializing in <span>React, JavaScript</span>, and backend technologies.
                             With experience in building full-stack applications, I enjoy solving problems, optimizing 

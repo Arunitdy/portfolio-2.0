@@ -205,8 +205,13 @@
     gap: 20px; 
     margin-top: 7vw;
 }
+.WhoIam h2 span {
+    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .WhoIam h2 {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .WhoIam p {
     padding-left: 0px;
