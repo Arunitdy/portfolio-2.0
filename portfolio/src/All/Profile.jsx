@@ -4,27 +4,27 @@ import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
+import { emailjs } from "@emailjs/browser";
 import "./Profile.css";
 
-const sendMail = (event) => {
-    event.preventDefault(); 
+function sendmail(a) {
+    let parms = {
+        name: "soul",
+        email: "arunmundakkal2003@gmail.com",
+        subject: "love",
+        message: a
+    };
 
-    const name = document.querySelector("input[type='text']").value.trim();
-    const email = document.querySelector("input[type='email']").value.trim();
-    const message = document.querySelector("textarea").value.trim();
-
-    if (!name || !email || !message) {
-        alert("Please fill in all fields before sending.");
-        return;
-    }
-
-    console.log("Mail Sent:", { name, email, message });
-
-    alert("Your message has been sent successfully!");
-
-    document.querySelector("form").reset();
-};
-
+    emailjs.send("service_g5rz57g", "template_ew8u8u5", parms)
+        .then(response => {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Mail sent successfully!");
+        })
+        .catch(error => {
+            console.error("FAILED...", error);
+            alert("Failed to send mail. Please try again later.");
+        });
+}
 
 export const Profile = () => {
 
