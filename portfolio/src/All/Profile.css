@@ -255,6 +255,8 @@
         display:none;
     }
     .Home {
+        
+        width: 93%;
         grid-template-columns: 1fr;
     }
     
@@ -282,6 +284,6 @@
     
       .contact-info,
       .contact-form {
-        width: 100%;
+        width: 97%;
       }
 }

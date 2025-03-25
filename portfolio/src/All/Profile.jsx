@@ -76,16 +76,16 @@ export const Profile = () => {
                     </div>
 
                     <div className="contact-form">
-                    <h2>Send Me a Message</h2>
-                    <form>
-                        <input type="text" placeholder="Your Name" required />
-                        <input type="email" placeholder="Your Email" required />
-                        <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                    <p className="time">
-                        {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
-                    </p>
+                        <h2>Send Me a Message</h2>
+                        <form>
+                            <input type="text" placeholder="Your Name" required />
+                            <input type="email" placeholder="Your Email" required />
+                            <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        <p className="time">
+                            {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
+                        </p>
                     </div>
                 </div>
             </div>
