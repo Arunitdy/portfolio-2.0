@@ -11,6 +11,7 @@ import reactLogo from "../../logos/react.svg";
 import mysqlLogo from "../../logos/mysql.svg";
 import firebaseLogo from "../../logos/firebase.svg";
 
+
 const skills = [
   { name: "C", logo: cLogo },
   { name: "Java", logo: javaLogo },
