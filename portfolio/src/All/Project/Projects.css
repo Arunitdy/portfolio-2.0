@@ -1,6 +1,7 @@
 .projects-container {
     text-align: center;
     margin-block: 100px;
+    background-color: transparent;
 }
 
 .section-title {

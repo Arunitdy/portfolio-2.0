@@ -2,6 +2,7 @@
     width: 100%;
     overflow: hidden;
     padding: 100px 0;
+    background-color: transparent;
     position: relative;
     white-space: nowrap;
 }
