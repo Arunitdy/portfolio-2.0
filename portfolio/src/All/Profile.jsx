@@ -3,6 +3,7 @@ import ProfileImg from "./logos/ProfileImg.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
+import { Projects } from "./Project/Projects"; 
 import "./Profile.css";
 
 export const Profile = () => {
@@ -83,9 +84,7 @@ export const Profile = () => {
 
             <div className="skill"><Skills/></div>
 
-            <div className="projects">
-
-            </div>
+            <div className="projects"> <Projects/> </div>
 
             <div className="footer">
                 <div className="footer-container">

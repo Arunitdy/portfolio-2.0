@@ -10,6 +10,7 @@ import cssLogo from "../../logos/css.svg";
 import reactLogo from "../../logos/react.svg";
 import mysqlLogo from "../../logos/mysql.svg";
 import firebaseLogo from "../../logos/firebase.svg";
+import viteLogo from "../../../../public/vite.svg";
 
 
 const skills = [
@@ -22,6 +23,7 @@ const skills = [
   { name: "React", logo: reactLogo },
   { name: "MySQL", logo: mysqlLogo },
   { name: "Firebase", logo: firebaseLogo },
+  { name: "Vite", logo: viteLogo },
 ];
 
 export const SkillBar = () => {
