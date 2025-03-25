@@ -1,8 +1,7 @@
 import React from "react";
 import "./SkillBar.css";
 
-// Skill logos (Replace these with actual logo images)
-import cLogo from "../../logos/c.svg";
+import cLogo from "../../logos/c.svg?url";
 import javaLogo from "../../logos/java.svg";
 import pythonLogo from "../../logos/python.svg";
 import jsLogo from "../../logos/javascript.svg";
@@ -32,7 +31,7 @@ export const SkillBar = () => {
           <div className="scrolling-logos">
             {[...skills, ...skills].map((skill, index) => (
               <div key={index} className="skill-logo">
-                <img src={skill.logo} alt={skill.name} type="image/svg+xml"  />
+                <img src={cLogo} alt={skill.name} type="image/svg+xml"  />
               </div>
             ))}
           </div>
