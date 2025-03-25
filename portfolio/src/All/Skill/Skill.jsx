@@ -10,8 +10,6 @@ const skillsData = [
       { name: "Java", percentage: 85 },
       { name: "Python", percentage: 70 },
       { name: "JavaScript", percentage: 90 },
-      { name: "HTML", percentage: 95 },
-      { name: "CSS", percentage: 90 },
     ],
   },
   {
@@ -28,6 +26,12 @@ const skillsData = [
       { name: "Postman", percentage: 70 },
       { name: "Firebase", percentage: 80 },
       { name: "Vite", percentage: 65 },
+    ],
+  },{
+    category: "Other",
+    skills: [
+      { name: "HTML", percentage: 95 },
+      { name: "CSS", percentage: 90 },
     ],
   },
 ];

@@ -2,18 +2,15 @@ import React from "react";
 import "./SkillBar.css";
 
 // Skill logos (Replace these with actual logo images)
-import cLogo from "../../logos/ProfileImg.jpg";
-import javaLogo from "../../logos/ProfileImg.jpg";
-import pythonLogo from "../../logos/ProfileImg.jpg";
-import jsLogo from "../../logos/ProfileImg.jpg";
-import htmlLogo from "../../logos/ProfileImg.jpg";
-import cssLogo from "../../logos/ProfileImg.jpg";
-import reactLogo from "../../logos/ProfileImg.jpg";
-import expressLogo from "../../logos/ProfileImg.jpg";
-import mysqlLogo from "../../logos/ProfileImg.jpg";
-import postmanLogo from "../../logos/ProfileImg.jpg";
-import firebaseLogo from "../../logos/ProfileImg.jpg";
-import viteLogo from "../../logos/ProfileImg.jpg";
+import cLogo from "../../logos/c.svg";
+import javaLogo from "../../logos/java.svg";
+import pythonLogo from "../../logos/python.svg";
+import jsLogo from "../../logos/javascript.svg";
+import htmlLogo from "../../logos/html.svg";
+import cssLogo from "../../logos/css.svg";
+import reactLogo from "../../logos/react.svg";
+import mysqlLogo from "../../logos/mysql.svg";
+import firebaseLogo from "../../logos/firebase.svg";
 
 const skills = [
   { name: "C", logo: cLogo },
@@ -23,11 +20,8 @@ const skills = [
   { name: "HTML", logo: htmlLogo },
   { name: "CSS", logo: cssLogo },
   { name: "React", logo: reactLogo },
-  { name: "Express.js", logo: expressLogo },
   { name: "MySQL", logo: mysqlLogo },
-  { name: "Postman", logo: postmanLogo },
   { name: "Firebase", logo: firebaseLogo },
-  { name: "Vite", logo: viteLogo },
 ];
 
 export const SkillBar = () => {
