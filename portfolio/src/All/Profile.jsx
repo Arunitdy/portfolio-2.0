@@ -50,16 +50,10 @@ export const Profile = () => {
                     </p>
                     <ul>
                         <li>
-                        <strong>Email:</strong> example@email.com
+                        <strong>Email:</strong> arunmundakkal003@gmail.com
                         </li>
                         <li>
-                        <strong>Phone:</strong> +91 1234567890
-                        </li>
-                        <li>
-                        <strong>GitHub:</strong> <a href="https://github.com/yourprofile">github.com/yourprofile</a>
-                        </li>
-                        <li>
-                        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a>
+                        <strong>Phone:</strong> +91 9995024963
                         </li>
                     </ul>
                     </div>
