@@ -332,6 +332,7 @@
         
     .right {
         display: visible;
+        margin-top: 150px;
     }
     .tempright {
         display: none;
