@@ -56,6 +56,11 @@ export const Profile = () => {
                     </div>
                 </div>
             </div>
+            <div className="about">
+                <h1>About <span>Me</span></h1>
+            </div>
+            <div className="skill"></div>
+            <div className="projects"></div>
             <div className="footer">
                 <div className="footer-container">
                     <div className="contact-info">
