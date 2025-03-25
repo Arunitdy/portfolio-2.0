@@ -22,6 +22,13 @@ const projects = [
       liveLink: "https://activity-points.vercel.app/",
       githubLink: "https://github.com/1518manu/ActivityPoints.git",
     },
+    {
+      title: "Smart-Energy-Meter ",
+      description: "A food donation and distribution management system.",
+      techStack: ["React", "Blynk cloud"],
+      liveLink: "https://github.com/Arunitdy/Smart-Energy-Meter/blob/main/smartenergymeter",
+      githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
+    },
   ];
   
 
