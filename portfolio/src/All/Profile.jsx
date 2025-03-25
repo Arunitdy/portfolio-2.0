@@ -28,6 +28,11 @@ export const Profile = () => {
                 </div>
             </ div>
             <div className="Home">
+                <div className="Home_right right">
+                    <div  className="Profile_wrapper">
+                        <img className = "Profile_img" src={ProfileImg} alt="profile img" />
+                    </div>
+                </div>
                 <div className = "Home_left">
                     <h1>Arun M</h1>
                     <h2>Frontend Developer</h2>
@@ -45,7 +50,7 @@ export const Profile = () => {
                         <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
                     </div>
                 </div>
-                <div className="Home_right">
+                <div className="Home_right tempright">
                     <div  className="Profile_wrapper">
                         <img className = "Profile_img" src={ProfileImg} alt="profile img" />
                     </div>
