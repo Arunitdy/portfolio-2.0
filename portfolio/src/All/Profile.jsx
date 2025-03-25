@@ -1,9 +1,20 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import ProfileImg from "./ProfileImg.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import "./Profile.css";
 
 export const Profile = () => {
+
+    const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
     return (<>
         <div className="profile">
             <div className = "header">
@@ -72,6 +83,9 @@ export const Profile = () => {
                         <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
+                    <p className="time">
+                        {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
+                    </p>
                     </div>
                 </div>
             </div>

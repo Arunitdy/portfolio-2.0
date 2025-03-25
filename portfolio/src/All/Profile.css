@@ -51,6 +51,7 @@
 .Home_about {
     width:40vw;
     color: darkgrey;
+    line-height: 1.5; 
 }
 .Home_left, .Home_right {
     padding: 10px;
@@ -240,7 +241,9 @@
     border: 2px solid #6a5acd;
   }
   
-
+.time{
+    font-size: 10px;
+}
 
 @media (max-width: 768px) { 
     .Home {
