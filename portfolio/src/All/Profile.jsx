@@ -39,10 +39,10 @@ export const Profile = () => {
                         <a href="#"><button className="connect">Connect Me</button></a>
                     </div>
                     <div className="social">
-                        <a href="#"><FaLinkedin className="icon"/></a>
-                        <a href="#"><FaGithub  className="icon"/></a>
-                        <a href="#"><FaFacebook  className="icon"/></a>
-                        <a href="#"><FaInstagram  className="icon"/></a>
+                        <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
+                        <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
+                        <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
+                        <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
                     </div>
                 </div>
                 <div className="Home_right">
@@ -68,10 +68,10 @@ export const Profile = () => {
                             </li>
                         </ul>
                         <div className="social">
-                            <a href="#"><FaLinkedin className="icon"/></a>
-                            <a href="#"><FaGithub  className="icon"/></a>
-                            <a href="#"><FaFacebook  className="icon"/></a>
-                            <a href="#"><FaInstagram  className="icon"/></a>
+                            <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
+                            <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
+                            <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
+                            <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
                         </div>
                     </div>
 
