@@ -67,14 +67,10 @@ export const Profile = () => {
             </div>
             <div className="About">
                 <h1>About <span>Me</span></h1>
-                <p>My journey as a developer and the path that led me to where I am today</p>
-                
-    <div className="max-w-5xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-6 text-purple-600">About Me</h2>
-      <p className="text-center text-gray-700 mb-8">
+                <p className="text-center text-gray-700 mb-8">
         My journey in programming has been exciting! Here’s a quick look at my progress over the years:
       </p>
-
+    <div className="max-w-5xl mx-auto p-6">
       <div className="relative flex items-center">
         {/* Animated Line */}
         <motion.div
