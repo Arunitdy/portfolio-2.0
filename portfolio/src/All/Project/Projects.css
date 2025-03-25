@@ -1,10 +1,11 @@
 .projects-container {
     text-align: center;
+    margin-block: 100px;
 }
 
 .section-title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     color: #ffff;
 }
 
