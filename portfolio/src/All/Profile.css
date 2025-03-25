@@ -249,8 +249,7 @@
         
     .header {
         padding-top: 20px;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     .header h1 {
         display:none;
