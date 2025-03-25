@@ -43,19 +43,25 @@ export const Profile = () => {
             <div className="footer">
                 <div className="footer-container">
                     <div className="contact-info">
-                    <h2>Contact Information</h2>
-                    <p>
-                        Feel free to reach out through any of the following channels. I'm always open to discussing new projects,
-                        team collaborations, or opportunities to be a part of your vision.
-                    </p>
-                    <ul>
-                        <li>
-                        <strong>Email:</strong> arunmundakkal003@gmail.com
-                        </li>
-                        <li>
-                        <strong>Phone:</strong> +91 9995024963
-                        </li>
-                    </ul>
+                        <h2>Contact Information</h2>
+                        <p>
+                            Feel free to reach out through any of the following channels. I'm always open to discussing new projects,
+                            team collaborations, or opportunities to be a part of your vision.
+                        </p>
+                        <ul>
+                            <li>
+                            <strong>Email:</strong> arunmundakkal003@gmail.com
+                            </li>
+                            <li>
+                            <strong>Phone:</strong> +91 9995024963
+                            </li>
+                        </ul>
+                        <div className="social">
+                            <a href="#"><FaLinkedin className="icon"/></a>
+                            <a href="#"><FaGithub  className="icon"/></a>
+                            <a href="#"><FaFacebook  className="icon"/></a>
+                            <a href="#"><FaInstagram  className="icon"/></a>
+                        </div>
                     </div>
 
                     <div className="contact-form">
