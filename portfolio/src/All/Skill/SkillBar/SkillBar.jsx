@@ -1,15 +1,15 @@
 import React from "react";
 import "./SkillBar.css";
 
-import cLogo from "../../logos/png/c.png";
-import javaLogo from "../../logos/png/java.png";
-import pythonLogo from "../../logos/png/python.png";
-import jsLogo from "../../logos/png/javascript.png";
-import htmlLogo from "../../logos/png/html.png";
-import cssLogo from "../../logos/png/css.png";
-import reactLogo from "../../logos/png/react.png";
-import mysqlLogo from "../../logos/png/mysql.png";
-import firebaseLogo from "../../logos/png/firebase.png";
+import cLogo from "../../logos/png/c_-removebg-preview.png";
+import javaLogo from "../../logos/png/java-removebg-preview.png";
+import pythonLogo from "../../logos/png/python-removebg-preview.png";
+import jsLogo from "../../logos/png/javascript-removebg-preview.png";
+import htmlLogo from "../../logos/png/html-removebg-preview.png";
+import cssLogo from "../../logos/png/css-removebg-preview.png";
+import reactLogo from "../../logos/png/react-removebg-preview.png";
+import mysqlLogo from "../../logos/png/mysql-removebg-preview.png";
+import firebaseLogo from "../../logos/png/firebase-removebg-preview.png";
 
 
 const skills = [

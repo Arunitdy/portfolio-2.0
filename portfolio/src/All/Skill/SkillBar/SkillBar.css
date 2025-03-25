@@ -1,7 +1,7 @@
 .skills-bar-container {
     width: 100%;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 100px 0 0 0px;
     background-color: transparent;
     position: relative;
     white-space: nowrap;
