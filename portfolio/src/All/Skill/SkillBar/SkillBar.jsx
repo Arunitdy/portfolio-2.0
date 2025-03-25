@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillBar.css";
 
-import cLogo from "../../logos/c.svg?url";
+import cLogo from "../../logos/c.svg";
 import javaLogo from "../../logos/java.svg";
 import pythonLogo from "../../logos/python.svg";
 import jsLogo from "../../logos/javascript.svg";
