@@ -5,22 +5,22 @@ const projects = [
       title: "Food Care",
       description: "A food donation and distribution management system.",
       techStack: ["React", "Spring Boot", "MySQL"],
-      liveLink: "https://foodcare.example.com",
-      githubLink: "https://github.com/yourusername/food-care",
+      liveLink: "",
+      githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
     },
     {
       title: "Portfolio 2.0",
       description: "A modern developer portfolio built with React and Vite.",
       techStack: ["React", "Vite", "Firebase"],
-      liveLink: "https://yourportfolio.vercel.app",
-      githubLink: "https://github.com/yourusername/portfolio-2.0",
+      liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
+      githubLink: "https://github.com/Arunitdy/portfolio-2.0",
     },
     {
       title: "Activity Points System",
       description: "A system to track student activity points with AWS S3 storage.",
       techStack: ["React", "Express.js", "PostgreSQL", "AWS S3"],
-      liveLink: "https://activitypoints.example.com",
-      githubLink: "https://github.com/yourusername/activity-points",
+      liveLink: "https://activity-points.vercel.app/",
+      githubLink: "https://github.com/1518manu/ActivityPoints.git",
     },
   ];
   
