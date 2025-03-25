@@ -32,6 +32,9 @@
 .menu_ele:hover {
     color: #6a5acd;
 }
+
+/* Home */
+
 .Home {
     width: 95%;
     display: grid;
@@ -161,6 +164,21 @@
     height: 100%;
     border-radius: 50%;
 }
+
+
+/* About */
+
+.About {
+    background-color: #6a5acd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw 0vw;
+    padding: 1vw;
+}
+
+/* Footer */
+
 .footer {
     border-top: .1vw solid white;
     background: #0a0a23;
