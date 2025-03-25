@@ -64,7 +64,7 @@ export const Profile = () => {
 
             <div className="About">
                 <h1>About <span>Me</span></h1>
-                <p className="text-center text-gray-700 mb-8">
+                <p className="text-center ">
                     My journey in programming has been exciting! Here’s a quick look at my progress over the years:
                 </p>
                 <div className="About_content">
