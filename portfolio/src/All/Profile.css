@@ -178,7 +178,7 @@
   
   .contact-info h2,
   .contact-form h2 {
-    color: #ff4081;
+    color: #6a5acd;
   }
   
   .contact-info p {
@@ -196,7 +196,7 @@
   }
   
   .contact-info a {
-    color: #ff4081;
+    color: #6a5acd;
     text-decoration: none;
   }
   
@@ -222,7 +222,7 @@
   }
   
   .contact-form button {
-    background: #ff4081;
+    background: #6a5acd;
     color: white;
     border: none;
     padding: 12px;
