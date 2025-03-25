@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 import ProfileImg from "./ProfileImg.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
 import { Timeline } from "./TimeLine/Timeline";
+import { Skills } from "./Skill/Skill";
 import "./Profile.css";
 
 export const Profile = () => {
@@ -66,12 +67,20 @@ export const Profile = () => {
                 <p className="text-center text-gray-700 mb-8">
                     My journey in programming has been exciting! Here’s a quick look at my progress over the years:
                 </p>
-                <Timeline  className="time_line"/>
+                <div className="About_content">
+                    <div className="WhoIam">
+                        <h2>Who I am</h2>
+                        <p>
+                            I am a passionate web developer specializing in <span>React, JavaScript</span>, and backend technologies.
+                            With experience in building full-stack applications, I enjoy solving problems, optimizing 
+                            performance, and creating user-friendly interfaces.
+                        </p>
+                    </div>
+                    <Timeline  className="time_line"/>
+                </div>
             </div>
 
-            <div className="skill">
-
-            </div>
+            <div className="skill"><Skills/></div>
 
             <div className="projects">
 

@@ -41,7 +41,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   
     gap: 20px; 
-    margin: 10vw 0vw;
+    margin-top: 10vw;
 }
 .Home h1 {
     background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
@@ -55,6 +55,9 @@
     width:40vw;
     color: darkgrey;
     line-height: 1.5; 
+}
+.Home_about p{
+    margin-left: 0px;
 }
 .right {
     display: none;
@@ -143,7 +146,7 @@
 .Home_right {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
 }
 
 .Profile_wrapper {
@@ -169,17 +172,18 @@
 /* About */
 
 .About {
-    background-color:rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10vw 0vw;
-    padding: 1vw;
+    margin-top: 140px;
 }
-.About h1 {
-    color: black;
+.About h1{
+    color: rgb(255, 255, 255);
     margin-bottom: 0px;
+}
+.About p {
+    color: darkgrey;
 }
 
 .About h1 span{
@@ -187,9 +191,26 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.time_line {
-    padding: 100px;
-    background-color: #ff0000;
+.About_content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    gap: 20px; 
+    margin-top: 7vw;
+}
+.WhoIam h2 {
+    color: white;
+}
+.WhoIam p {
+    padding-left: 0px;
+    line-height: 1.7;
+    color: darkgrey;
+    margin-left: 0px;
+}
+
+.skill {
+    margin-top :140px;
 }
 /* Footer */
 
@@ -221,6 +242,7 @@
   .contact-info p {
     font-size: 14px;
     line-height: 1.6;
+    margin-left: 0px;
   }
   
   .contact-info ul {
