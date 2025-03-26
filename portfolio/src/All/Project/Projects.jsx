@@ -34,6 +34,14 @@ const projects = [
     liveLink: "",
     githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
   },
+  {
+    title: "Soul",
+    gui: "./logos/projectGui/soul.jpg", 
+    description: "A food donation and distribution management system.",
+    techStack: ["html", "css", "js", "emailJs.Api"],
+    liveLink: "",
+    githubLink: "https://github.com/Arunitdy/Soul-",
+  },
 ];
 
 export const Projects = () => {
