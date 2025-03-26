@@ -35,7 +35,7 @@
 /* Card Hover Effect */
 .project-card:hover {
     background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
-    transform: scale(1.05);
+    
 }
 
 /* Project Image */
