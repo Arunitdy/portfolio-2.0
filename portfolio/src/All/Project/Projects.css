@@ -84,8 +84,6 @@
 .project-links a:hover {
     background: #291575;
 }
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .projects-scroll {
         display: flex;
