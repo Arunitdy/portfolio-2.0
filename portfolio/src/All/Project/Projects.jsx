@@ -1,10 +1,18 @@
 import React from "react";
 import "./Projects.css"; 
 
+// Import images correctly
+import FDMS from "../logos/projectGui/FDMS.jpg";
+import Portfolio from "../logos/projectGui/portfolio.png";
+import Activity from "../logos/projectGui/activity.png";
+import Smart from "../logos/projectGui/smart.png";
+import Soul from "../logos/projectGui/soul.png";
+
+// Projects Data
 const projects = [
   {
     title: "Food Care",
-    gui: "./logos/projectGui/FDMS.jpg", 
+    gui: FDMS,
     description: "A food donation and distribution management system.",
     techStack: ["React", "Spring Boot", "MySQL"],
     liveLink: "",
@@ -12,7 +20,7 @@ const projects = [
   },
   {
     title: "Portfolio 2.0",
-    gui: "/logos/projectGui/portfolio.png",
+    gui: Portfolio,
     description: "A modern developer portfolio built with React and Vite.",
     techStack: ["React", "Vite"],
     liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
@@ -20,7 +28,7 @@ const projects = [
   },
   {
     title: "Activity Points System",
-    gui: "/logos/projectGui/activity.png",
+    gui: Activity,
     description: "A system to track student activity points with AWS S3 storage.",
     techStack: ["React", "Firebase"],
     liveLink: "https://activity-points.vercel.app/",
@@ -28,7 +36,7 @@ const projects = [
   },
   {
     title: "Smart-Energy-Meter",
-    gui: "/logos/projectGui/smart.png",
+    gui: Smart,
     description: "A smart energy meter using Blynk cloud.",
     techStack: ["React", "Blynk Cloud"],
     liveLink: "",
@@ -36,9 +44,9 @@ const projects = [
   },
   {
     title: "Soul",
-    gui: "./logos/projectGui/soul.png", 
+    gui: Soul,
     description: "A food donation and distribution management system.",
-    techStack: ["html", "css", "js", "emailJs.Api"],
+    techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
     liveLink: "",
     githubLink: "https://github.com/Arunitdy/Soul-",
   },
