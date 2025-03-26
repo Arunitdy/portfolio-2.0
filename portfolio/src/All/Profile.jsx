@@ -152,13 +152,13 @@ export const Profile = () => {
                     {/* Contact Form */}
                     <div className="contact-form">
                         <h2>Send Me a Message</h2>
-                        <form onSubmit={sendMail}>
+                        <form onSubmit={sendMail} >
                             <input type="text" placeholder="Your Name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                             <input type="email" placeholder="Your Email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                             <textarea placeholder="Hello, I’d like to talk about..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
                             <button type="submit">{ sendMailButton ? "processing" : "Send Message"}</button>
                         </form>
-                        <p className="time">
+                        <p className="time" disabled = {setSendMailButton}>
                             {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
                         </p>
                     </div>
