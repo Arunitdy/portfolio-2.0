@@ -1,8 +1,15 @@
 import React from "react";
+import { FDMS } from "./logos/projectGui/FDMS.jpg"
+import { soul } from "./logos/projectGui/soul.jpg"
+import { activity } from "./logos/projectGui/activity.jpg"
+import { smart } from "./logos/projectGui/smart.png"
+import { portfolio } from "./logos/projectGui/portfolio.jpg"
+
 import "./Projects.css";
 const projects = [
     {
       title: "Food Care",
+      gui: FDMS,
       description: "A food donation and distribution management system.",
       techStack: ["React", "Spring Boot", "MySQL"],
       liveLink: "",
@@ -10,20 +17,23 @@ const projects = [
     },
     {
       title: "Portfolio 2.0",
+      gui: portfolio,
       description: "A modern developer portfolio built with React and Vite.",
-      techStack: ["React", "Vite", "Firebase"],
+      techStack: ["React", "Vite" ],
       liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
       githubLink: "https://github.com/Arunitdy/portfolio-2.0",
     },
     {
       title: "Activity Points System",
+      gui: activity,
       description: "A system to track student activity points with AWS S3 storage.",
-      techStack: ["React", "Express.js", "PostgreSQL", "AWS S3"],
+      techStack: ["React", "Firebase"],
       liveLink: "https://activity-points.vercel.app/",
       githubLink: "https://github.com/1518manu/ActivityPoints.git",
     },
     {
       title: "Smart-Energy-Meter ",
+      gui: smart,
       description: "A smart energy meter using Blynk cloud.",
       techStack: ["React", "Blynk cloud"],
       liveLink: "https://github.com/Arunitdy/Smart-Energy-Meter/blob/main/smartenergymeter",
