@@ -45,7 +45,7 @@ const projects = [
   {
     title: "Soul",
     gui: Soul,
-    description: "A food donation and distribution management system.",
+    description: "Soul is an interactive web experience that blends love, romance, and technology through stunning visuals, animations, and heartfelt interactions, making it perfect for digital love letters or creative proposals.",
     techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
     liveLink: "https://soul-xi.vercel.app/",
     githubLink: "https://github.com/Arunitdy/Soul-",
