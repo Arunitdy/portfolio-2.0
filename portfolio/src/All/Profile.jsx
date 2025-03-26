@@ -5,47 +5,55 @@ import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
 import emailjs from "@emailjs/browser";
-
 import "./Profile.css";
 
-function sendMail(a) {
-    console.log(a);
-    (function(){
-        emailjs.init({
-          publicKey: "v1NuNxKifUW2QtRAC",
-         });
-        })();
-    let parms = {
-        name: "soul",
-        email: "arunmundakkal2003@gmail.com",
-        subject: "love",
-        message: a
-    };
-
-    emailjs.send("service_g5rz57g", "template_ew8u8u5", parms)
-        .then(response => {
-            console.log("SUCCESS!", response.status, response.text);
-            alert("Mail sent successfully!");
-        })
-        .catch(error => {
-            console.error("FAILED...", error);
-            alert("Failed to send mail. Please try again later.");
-        });
-}
 
 export const Profile = () => {
-
     const [currentTime, setCurrentTime] = useState(new Date());
-    
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setCurrentTime(new Date());
+            setCurrentTime(new Date());
         }, 1000);
 
         return () => clearInterval(interval);
     }, []);
 
+    const sendMail = (e) => {
+        e.preventDefault();
+
+        if (!formData.name || !formData.email || !formData.message) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        emailjs.init("v1NuNxKifUW2QtRAC");
+
+        let params = {
+            name: formData.name,
+            email: formData.email,
+            subject: "Official",
+            message: formData.message
+        };
+
+        emailjs.send("service_r5z14fm", "template_ew8u8u5", params)
+            .then(response => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Mail sent successfully!");
+                setFormData({ name: "", email: "", message: "" });
+            })
+            .catch(error => {
+                console.error("FAILED...", error);
+                alert("Failed to send mail. Please try again later.");
+            });
+    };
+
+    
     return (<>
 
         <div className="profile">
@@ -137,12 +145,13 @@ export const Profile = () => {
                         </div>
                     </div>
 
+                    {/* Contact Form */}
                     <div className="contact-form">
                         <h2>Send Me a Message</h2>
                         <form onSubmit={sendMail}>
-                            <input type="text" placeholder="Your Name" required />
-                            <input type="email" placeholder="Your Email" required />
-                            <textarea placeholder="Hello, I’d like to talk about..." required></textarea>
+                            <input type="text" placeholder="Your Name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+                            <input type="email" placeholder="Your Email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                            <textarea placeholder="Hello, I’d like to talk about..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
                             <button type="submit">Send Message</button>
                         </form>
                         <p className="time">
