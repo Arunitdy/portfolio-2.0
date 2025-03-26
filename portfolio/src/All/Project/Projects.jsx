@@ -4,7 +4,7 @@ import "./Projects.css";
 const projects = [
   {
     title: "Food Care",
-    gui: "./logos/projectGui/foodCare.jpg", 
+    gui: "./logos/projectGui/FDMS.jpg", 
     description: "A food donation and distribution management system.",
     techStack: ["React", "Spring Boot", "MySQL"],
     liveLink: "",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Portfolio 2.0",
-    gui: "/logos/projectGui/portfolio.jpg",
+    gui: "/logos/projectGui/portfolio.png",
     description: "A modern developer portfolio built with React and Vite.",
     techStack: ["React", "Vite"],
     liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Activity Points System",
-    gui: "/logos/projectGui/activity.jpg",
+    gui: "/logos/projectGui/activity.png",
     description: "A system to track student activity points with AWS S3 storage.",
     techStack: ["React", "Firebase"],
     liveLink: "https://activity-points.vercel.app/",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "Soul",
-    gui: "./logos/projectGui/soul.jpg", 
+    gui: "./logos/projectGui/soul.png", 
     description: "A food donation and distribution management system.",
     techStack: ["html", "css", "js", "emailJs.Api"],
     liveLink: "",
