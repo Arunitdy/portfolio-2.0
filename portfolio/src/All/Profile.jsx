@@ -10,6 +10,7 @@ import "./Profile.css";
 
 export const Profile = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
+    const [sendMailButton, setSendMailButton] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -25,6 +26,7 @@ export const Profile = () => {
     }, []);
 
     const sendMail = (e) => {
+        setSendMailButton(true);
         e.preventDefault();
 
         if (!formData.name || !formData.email || !formData.message) {
@@ -50,6 +52,8 @@ export const Profile = () => {
             .catch(error => {
                 console.error("FAILED...", error);
                 alert("Failed to send mail. Please try again later.");
+            }).finally(() => {
+                setSendMailButton(false);
             });
     };
 
@@ -152,7 +156,7 @@ export const Profile = () => {
                             <input type="text" placeholder="Your Name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
                             <input type="email" placeholder="Your Email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                             <textarea placeholder="Hello, I’d like to talk about..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
-                            <button type="submit">Send Message</button>
+                            <button type="submit">{ sendMailButton ? "processing" : "Send Message"}</button>
                         </form>
                         <p className="time">
                             {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
