@@ -90,8 +90,8 @@ export const Skills = () => {
             <div className="skills-grid">
               {section.skills.map((skill, i) => (
                 <div key={i} className="skill-box">
-                  <div className="skill-name">
-                    <a href={skill.website} target="_blank" rel="noreferrer">
+                  <div >
+                    <a className="skill-name" href={skill.website} target="_blank" rel="noreferrer">
                       {skill.name}
                     </a>
                   </div>

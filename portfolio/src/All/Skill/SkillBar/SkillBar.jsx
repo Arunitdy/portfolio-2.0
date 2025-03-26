@@ -28,17 +28,15 @@ export const SkillBar = () => {
       <div className="skills-bar-container">
         <div className="skills-bar">
           {/* Seamless looping by duplicating elements */}
-          
-            <div className="scrolling-logos">
-              {[...skills, ...skills].map((skill, index) => (
-                <a href={skill.website} target="_blank" rel="noreferrer">
-                  <div key={index} className="skill-logo">
-                    <img src={skill.logo} alt={skill.name} type="image/svg+xml"  />
-                  </div>
-                </a>
-              ))}
-            </div>
-          
+          <div className="scrolling-logos">
+            {[...skills, ...skills].map((skill, index) => (
+              <a key={index} href={skill.website} target="_blank" rel="noreferrer">
+                <div className="skill-logo">
+                  <img src={skill.logo} alt={skill.name} />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     );
