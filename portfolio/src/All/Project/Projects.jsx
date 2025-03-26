@@ -39,7 +39,7 @@ const projects = [
     gui: Smart,
     description: "A smart energy meter using Blynk cloud.",
     techStack: ["React", "Blynk Cloud"],
-    liveLink: "",
+    liveLink: "https://smart-energy-meter-three.vercel.app/",
     githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     gui: Soul,
     description: "A food donation and distribution management system.",
     techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
-    liveLink: "",
+    liveLink: "https://soul-xi.vercel.app/",
     githubLink: "https://github.com/Arunitdy/Soul-",
   },
 ];
