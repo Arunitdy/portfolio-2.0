@@ -38,7 +38,7 @@ export const Profile = () => {
             name: formData.name,
             email: formData.email,
             subject: "Official",
-            message: formData.message
+            message:"name:" + formData.name + "email:" + formData.email + "message:" + formData.message
         };
 
         emailjs.send("service_r5z14fm", "template_ew8u8u5", params)
@@ -53,7 +53,7 @@ export const Profile = () => {
             });
     };
 
-    
+
     return (<>
 
         <div className="profile">
