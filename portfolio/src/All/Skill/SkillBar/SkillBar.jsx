@@ -11,17 +11,16 @@ import reactLogo from "../../logos/png/react-removebg-preview.png";
 import mysqlLogo from "../../logos/png/mysql-removebg-preview.png";
 import firebaseLogo from "../../logos/png/firebase-removebg-preview.png";
 
-
 const skills = [
-  { name: "C", logo: cLogo },
-  { name: "Java", logo: javaLogo },
-  { name: "Python", logo: pythonLogo },
-  { name: "JavaScript", logo: jsLogo },
-  { name: "HTML", logo: htmlLogo },
-  { name: "CSS", logo: cssLogo },
-  { name: "React", logo: reactLogo },
-  { name: "MySQL", logo: mysqlLogo },
-  { name: "Firebase", logo: firebaseLogo },
+  { name: "C", logo: cLogo, website: "https://www.open-std.org/jtc1/sc22/wg14/" },
+  { name: "Java", logo: javaLogo, website: "https://www.java.com/" },
+  { name: "Python", logo: pythonLogo, website: "https://www.python.org/" },
+  { name: "JavaScript", logo: jsLogo, website: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+  { name: "HTML", logo: htmlLogo, website: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+  { name: "CSS", logo: cssLogo, website: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+  { name: "React", logo: reactLogo, website: "https://react.dev/" },
+  { name: "MySQL", logo: mysqlLogo, website: "https://www.mysql.com/" },
+  { name: "Firebase", logo: firebaseLogo, website: "https://firebase.google.com/" },
 ];
 
 export const SkillBar = () => {
@@ -29,13 +28,17 @@ export const SkillBar = () => {
       <div className="skills-bar-container">
         <div className="skills-bar">
           {/* Seamless looping by duplicating elements */}
-          <div className="scrolling-logos">
-            {[...skills, ...skills].map((skill, index) => (
-              <div key={index} className="skill-logo">
-                <img src={skill.logo} alt={skill.name} type="image/svg+xml"  />
-              </div>
-            ))}
-          </div>
+          
+            <div className="scrolling-logos">
+              {[...skills, ...skills].map((skill, index) => (
+                <a href={skill.website} target="_blank" rel="noreferrer">
+                  <div key={index} className="skill-logo">
+                    <img src={skill.logo} alt={skill.name} type="image/svg+xml"  />
+                  </div>
+                </a>
+              ))}
+            </div>
+          
         </div>
       </div>
     );

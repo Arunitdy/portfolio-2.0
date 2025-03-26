@@ -6,32 +6,33 @@ const skillsData = [
   {
     category: "Languages",
     skills: [
-      { name: "C", percentage: 80 },
-      { name: "Java", percentage: 85 },
-      { name: "Python", percentage: 70 },
-      { name: "JavaScript", percentage: 90 },
+      { name: "C", percentage: 80, website: "https://www.open-std.org/jtc1/sc22/wg14/" },
+      { name: "Java", percentage: 85, website: "https://www.java.com/" },
+      { name: "Python", percentage: 70, website: "https://www.python.org/" },
+      { name: "JavaScript", percentage: 90, website: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
     ],
   },
   {
     category: "Frameworks & Libraries",
     skills: [
-      { name: "React", percentage: 85 },
-      { name: "Express.js", percentage: 75 },
-      { name: "MySQL", percentage: 80 },
+      { name: "React", percentage: 85, website: "https://react.dev/" },
+      { name: "Express.js", percentage: 75, website: "https://expressjs.com/" },
+      { name: "MySQL", percentage: 80, website: "https://www.mysql.com/" },
     ],
   },
   {
     category: "Tools & Platforms",
     skills: [
-      { name: "Postman", percentage: 70 },
-      { name: "Firebase", percentage: 80 },
-      { name: "Vite", percentage: 65 },
+      { name: "Postman", percentage: 70, website: "https://www.postman.com/" },
+      { name: "Firebase", percentage: 80, website: "https://firebase.google.com/" },
+      { name: "Vite", percentage: 65, website: "https://vitejs.dev/" },
     ],
-  },{
+  },
+  {
     category: "Other",
     skills: [
-      { name: "HTML", percentage: 95 },
-      { name: "CSS", percentage: 90 },
+      { name: "HTML", percentage: 95, website: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+      { name: "CSS", percentage: 90, website: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
     ],
   },
 ];
@@ -89,7 +90,11 @@ export const Skills = () => {
             <div className="skills-grid">
               {section.skills.map((skill, i) => (
                 <div key={i} className="skill-box">
-                  <div className="skill-name">{skill.name}</div>
+                  <div className="skill-name">
+                    <a href={skill.website} target="_blank" rel="noreferrer">
+                      {skill.name}
+                    </a>
+                  </div>
                   <div className="progress-bar">
                     <div
                       className="progress-fill"
@@ -106,7 +111,7 @@ export const Skills = () => {
           </div>
         ))}
       </div>
-      <SkillBar/>
+      <SkillBar />
     </div>
   );
 };
