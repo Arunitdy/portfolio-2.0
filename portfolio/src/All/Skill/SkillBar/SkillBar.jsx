@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillBar.css";
 
-import cLogo from "../../logos/png/c_-removebg-preview.png";
+import cLogo from "../../logos/png/c-removebg-preview.png";
 import javaLogo from "../../logos/png/java-removebg-preview.png";
 import pythonLogo from "../../logos/png/python-removebg-preview.png";
 import jsLogo from "../../logos/png/javascript-removebg-preview.png";
