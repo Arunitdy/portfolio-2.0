@@ -1,6 +1,6 @@
 .skills-container {
   text-align: center;
-  color: #e0e0e0;
+  color: var(--text-secondary);
   background-color: transparent;
   padding: 30px 2px;
 }
@@ -8,13 +8,15 @@
 .skills-title {
   font-size: 24px;
   margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
 .skills-title span {
-  background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .skills-section {
   display: flex;
   flex-wrap: wrap;
@@ -23,17 +25,18 @@
 }
 
 .skill-category {
-  border: 1px solid #6a5acd;
+  border: 1px solid var(--accent-color);
   border-radius: 10px;
   padding: 20px 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color:transparent;
 }
 
 .category-title {
   font-size: 18px;
   margin-bottom: 15px;
   text-align: center;
-  color: white;
+  color: var(--text-primary);
   font-weight: bold;
 }
 
@@ -45,30 +48,33 @@
 }
 
 .skill-box {
-  border: 1px solid #6a5acd;
+  border: 1px solid var(--accent-color);
   border-radius: 10px;
   padding: 10px;
   text-align: center;
   width: 100px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+  background-color:transparent;
 }
 
 .skill-box:hover {
   transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(106, 90, 205, 0.3);
 }
 
 .skill-name {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
 }
+
 /* Progress bar container */
 .progress-bar {
   width: 100%;
-  background: #000000;
+  background: var(--bg-secondary);
   border-radius: 10px;
   height: 8px;
   overflow: hidden;
@@ -78,24 +84,24 @@
 /* Progress fill (animated) */
 .progress-fill {
   height: 100%;
-  background:linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+  background: var(--gradient-primary);
   width: 0;
   transition: width 1.5s ease-in-out;
 }
 
 .skill-percentage {
   font-size: 14px;
-  color: #6a5acd;
+  color: var(--accent-color);
   font-weight: bold;
   margin-top: 5px;
 }
 
 @media (max-width: 768px) {
   .skills-section {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .skill-category {
-      width: 90%;
+    width: 90%;
   }
 }
