@@ -37,7 +37,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--bg-primary);
+    background-color: transparent;
   }
   
   .header h1 {
@@ -67,7 +67,7 @@
     position: relative;
     display: inline-block;
     width: 2em;
-    height: 1em;
+    height: 1.1em;
   }
   
   /* Hide default HTML checkbox */
@@ -97,7 +97,7 @@
     width: .9em;
     border-radius: 20px;
     left: 0.09em;
-    bottom: 0.07em;
+    bottom: 0.1em;
     background-color: black;
     box-shadow: inset 8px -4px 0 0 white;
     transition: 0.4s;
