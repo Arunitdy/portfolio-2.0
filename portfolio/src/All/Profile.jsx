@@ -83,13 +83,15 @@ export const Profile = () => {
                         <a href="#projects"><button className="menu_ele">Projects</button></a>
                         <a href="#contact"><button className="menu_ele">Contact</button></a>
                     </div>
-                    <button 
-                        className="dark_light" 
-                        onClick={toggleTheme}
-                    >
-                        {darkMode ? 'Switch to Light' : 'Switch to Dark'}
-                    </button>            
-            </ div>
+                    <label className="switch">
+                        <input 
+                            type="checkbox" 
+                            checked={darkMode}
+                            onChange={toggleTheme}
+                        />
+                        <span className="slider"></span>
+                    </label>
+            </div>
 
             <div id ="home" className="Home">
                 <div className="Home_right right">
