@@ -86,7 +86,7 @@ export const Profile = () => {
                     <label className="switch">
                         <input 
                             type="checkbox" 
-                            checked={darkMode}
+                            checked={!darkMode}
                             onChange={toggleTheme}
                         />
                         <span className="slider"></span>
