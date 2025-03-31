@@ -6,6 +6,7 @@ import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
 import emailjs from "@emailjs/browser";
 import "./Profile.css";
+import "../index.css";
 
 
 export const Profile = () => {
@@ -16,6 +17,16 @@ export const Profile = () => {
         email: "",
         message: ""
     });
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleTheme = () => {
+      setDarkMode(prevMode => !prevMode);
+    };
+  
+    useEffect(() => {
+      document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    }, [darkMode]);
+  
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -65,13 +76,19 @@ export const Profile = () => {
         <div className="profile">
             <div className = "header">
                 <h1>ARUN M</h1>
-                <div className="menu">
-                    <a href="#home"><button className="menu_ele">Home</button></a>
-                    <a href="#about"><button className="menu_ele">About</button></a>
-                    <a href="#skills"><button className="menu_ele">Skill</button></a>
-                    <a href="#projects"><button className="menu_ele">Projects</button></a>
-                    <a href="#contact"><button className="menu_ele">Contact</button></a>
-                </div>
+                    <div className="menu">
+                        <a href="#home"><button className="menu_ele">Home</button></a>
+                        <a href="#about"><button className="menu_ele">About</button></a>
+                        <a href="#skills"><button className="menu_ele">Skill</button></a>
+                        <a href="#projects"><button className="menu_ele">Projects</button></a>
+                        <a href="#contact"><button className="menu_ele">Contact</button></a>
+                    </div>
+                    <button 
+                        className="dark_light" 
+                        onClick={toggleTheme}
+                    >
+                        {darkMode ? 'Switch to Light' : 'Switch to Dark'}
+                    </button>            
             </ div>
 
             <div id ="home" className="Home">

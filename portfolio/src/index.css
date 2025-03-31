@@ -1,16 +1,40 @@
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', 
+               Helvetica, Arial, sans-serif;
+  --font-code: Courier, monospace;
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f0f1a;
+  --text-color: white;
+}
 
 * {
-  font-family: San Francisco, Courier, Helvetica, Arial, san-serif, monospace;
+  font-family: var(--font-main), var(--font-code);
 }
 
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #0f0f1a;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button {
   cursor: pointer;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 8px 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.dark_light {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
