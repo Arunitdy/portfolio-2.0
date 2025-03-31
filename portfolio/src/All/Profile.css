@@ -169,7 +169,7 @@
     border-radius: 5px;
     background: var(--gradient-primary);
     border: none;
-    color: var(--bg-primary);
+    color: white;
   }
   
   .connect {
@@ -178,20 +178,20 @@
     border-radius: 5px;
     border: 1px solid #6a5acd;  
     background: transparent;
-    color: var(--text-primary);
+    color:var(--accent-color);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
   
   .connect:hover {
     background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
-    color: var(--bg-primary);
+    color: white;
   }
   
   .view:hover {
     border: 1px solid #6a5acd;
     background: transparent;
-    color: var(--text-primary);
+    color:var(--accent-color);
   }
   
   .icon {
