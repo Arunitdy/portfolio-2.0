@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Activity Points System",
     gui: Activity,
-    description: "A system to track student activity points with AWS S3 storage.",
+    description: "A system to track student activity points with  fire store.",
     techStack: ["React", "Firebase"],
     liveLink: "https://activity-points.vercel.app/",
     githubLink: "https://github.com/1518manu/ActivityPoints.git",
