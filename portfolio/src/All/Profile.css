@@ -357,7 +357,11 @@
   .time {
     font-size: 10px;
   }
-  
+  .time_switch {
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+  }
   /* Media Queries (unchanged as they use relative units) */
   @media (min-width: 768px) {
     .right {

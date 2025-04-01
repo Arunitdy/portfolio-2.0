@@ -83,14 +83,6 @@ export const Profile = () => {
                         <a href="#projects"><button className="menu_ele">Projects</button></a>
                         <a href="#contact"><button className="menu_ele">Contact</button></a>
                     </div>
-                    <label className="switch">
-                        <input 
-                            type="checkbox" 
-                            checked={!darkMode}
-                            onChange={toggleTheme}
-                        />
-                        <span className="slider"></span>
-                    </label>
             </div>
 
             <div id ="home" className="Home">
@@ -179,9 +171,19 @@ export const Profile = () => {
                             <textarea placeholder="Hello, I’d like to talk about..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
                             <button type="submit"  disabled = {sendMailButton}>{ sendMailButton ? "processing" : "Send Message"}</button>
                         </form>
-                        <p className="time">
-                            {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
-                        </p>
+                        <div className="time_switch">
+                            <p className="time">
+                                {currentTime.toLocaleDateString()} - {currentTime.toLocaleTimeString()}
+                            </p>
+                            <label className="switch">
+                                <input 
+                                    type="checkbox" 
+                                    checked={!darkMode}
+                                    onChange={toggleTheme}
+                                />
+                                <span className="slider"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
