@@ -52,7 +52,7 @@
     margin: 1vw;
     border: none;
     padding: 1vw;
-    color: rgb(177, 178, 178);
+    color:var(--text-primary);
     background-color: transparent;
   }
 
