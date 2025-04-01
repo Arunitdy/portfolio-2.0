@@ -17,7 +17,8 @@ export const Profile = () => {
         email: "",
         message: ""
     });
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
 
     const toggleTheme = () => {
       setDarkMode(prevMode => !prevMode);
@@ -27,6 +28,8 @@ export const Profile = () => {
       document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
     }, [darkMode]);
   
+
+    
 
     useEffect(() => {
         const interval = setInterval(() => {
