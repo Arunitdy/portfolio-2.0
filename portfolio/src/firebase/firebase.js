@@ -12,8 +12,8 @@ const firebaseConfig = {
   projectId: "soul-41fb1",
   storageBucket: "soul-41fb1.firebasestorage.app",
   messagingSenderId: "844915449729",
-  appId: "1:844915449729:web:d6f4df3bc90fd989735280",
-  measurementId: "G-RB2XR9KJ42"
+  appId: "1:844915449729:web:9ed4ea0df5fe51c2735280",
+  measurementId: "G-28X120NH7S"
 };
 
 // Initialize Firebase
