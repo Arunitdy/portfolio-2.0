@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import { Profile } from './All/Profile'
-import './App.css'
+
+import { Profile } from "./All/Profile";
+import { DeviceDetails } from "./FireStore";
+import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
-      <Profile/>
+      <DeviceDetails /> {/* Run DeviceDetails when App loads */}
+      <Profile />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
