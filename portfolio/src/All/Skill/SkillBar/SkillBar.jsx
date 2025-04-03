@@ -11,6 +11,8 @@ import reactLogo from "../../logos/png/react-removebg-preview.png";
 import mysqlLogo from "../../logos/png/mysql-removebg-preview.png";
 import firebaseLogo from "../../logos/png/firebase-removebg-preview.png";
 import dockerLogo from "../../logos/png/docker-removebg-preview.png";
+import gitLogo from "../../logos/png/git.png";
+import gitHubLogo from "../../logos/png/github.png";
 
 const skills = [
   { name: "C", logo: cLogo, website: "https://www.open-std.org/jtc1/sc22/wg14/" },
@@ -22,7 +24,9 @@ const skills = [
   { name: "React", logo: reactLogo, website: "https://react.dev/" },
   { name: "MySQL", logo: mysqlLogo, website: "https://www.mysql.com/" },
   { name: "Firebase", logo: firebaseLogo, website: "https://firebase.google.com/" },
-  { name: "Docker", logo: dockerLogo, website: "https://www.docker.com/"},
+  { name: "Docker", logo: dockerLogo, website: "https://www.docker.com/" },
+  { name: "Github", logo: gitHubLogo, website: " https://github.com/ "},
+  { name: "Git", logo: gitLogo, website: " https://git-scm.com/ "},
 ];
 
 export const SkillBar = () => {

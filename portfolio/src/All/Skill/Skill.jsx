@@ -26,6 +26,9 @@ const skillsData = [
       { name: "Postman", percentage: 70, website: "https://www.postman.com/" },
       { name: "Firebase", percentage: 80, website: "https://firebase.google.com/" },
       { name: "Vite", percentage: 65, website: "https://vitejs.dev/" },
+      { nmae: "Docker", percentage: 50, website: "https://www.docker.com/" },
+      { name: "Github", percentage: 70, website: " https://github.com/ "},
+      { name: "Git", percentage: 80, website: " https://git-scm.com/ "},
     ],
   },
   {
