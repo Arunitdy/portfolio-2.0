@@ -34,6 +34,7 @@ const skillsData = [
   {
     category: "Other",
     skills: [
+      
       { name: "HTML", percentage: 95, website: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
       { name: "CSS", percentage: 90, website: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
     ],
