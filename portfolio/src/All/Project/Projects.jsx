@@ -7,25 +7,10 @@ import Portfolio from "../logos/projectGui/portfolio.png";
 import Activity from "../logos/projectGui/activity.png";
 import Smart from "../logos/projectGui/smart.png";
 import Soul from "../logos/projectGui/soul.png";
+import GDG from "../logos/projectGui/GDG.png"
 
 // Projects Data
 const projects = [
-  {
-    title: "Food Care",
-    gui: FDMS,
-    description: "A food donation and distribution management system.",
-    techStack: ["React", "Spring Boot", "MySQL"],
-    liveLink: "",
-    githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
-  },
-  {
-    title: "Portfolio 2.0",
-    gui: Portfolio,
-    description: "A modern developer portfolio built with React and Vite.",
-    techStack: ["React", "Vite", "Docker"],
-    liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/portfolio-2.0",
-  },
   {
     title: "Activity Points System",
     gui: Activity,
@@ -33,6 +18,14 @@ const projects = [
     techStack: ["React", "Firebase"],
     liveLink: "https://activity-points.vercel.app/",
     githubLink: "https://github.com/1518manu/ActivityPoints.git",
+  },
+  {
+    title: "Food Care",
+    gui: FDMS,
+    description: "A food donation and distribution management system.",
+    techStack: ["React", "Spring Boot", "MySQL"],
+    liveLink: "",
+    githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
   },
   {
     title: "Smart-Energy-Meter",
@@ -43,12 +36,28 @@ const projects = [
     githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
   },
   {
+    title: "Portfolio 2.0",
+    gui: Portfolio,
+    description: "A modern developer portfolio built with React and Vite.",
+    techStack: ["React", "Vite", "Docker"],
+    liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
+    githubLink: "https://github.com/Arunitdy/portfolio-2.0",
+  },
+  {
+    title: "Devcation'25- GDG On Campus IGDTUW",
+    gui: GDG,
+    description: "Devcation'25 is the technical festival organized by Google Developer Groups OnCampus - Indira Gandhi Delhi Technical University for Women that celebrates diversity in the TechForGood Domain. During the week, we have the Devcation'25 hackathon: Hack 'N' Solve. ",
+    techStack: ["React", "Vite","CSS"],
+    liveLink: "https://gemini-revamp-phqu.vercel.app/",
+    githubLink: "https://github.com/Arunitdy/Soul-",
+  },
+  {
     title: "Soul",
     gui: Soul,
     description: "Soul is an interactive web experience that blends love, romance, and technology through stunning visuals, animations, and heartfelt interactions, making it perfect for digital love letters or creative proposals. ",
     techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
     liveLink: "https://soul-xi.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/Soul-",
+    githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
 ];
 
