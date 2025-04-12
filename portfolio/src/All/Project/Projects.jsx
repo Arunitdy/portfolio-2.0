@@ -28,20 +28,20 @@ const projects = [
     githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
   },
   {
-    title: "Smart-Energy-Meter",
-    gui: Smart,
-    description: "A smart energy meter using Blynk cloud.",
-    techStack: ["React", "Blynk Cloud"],
-    liveLink: "https://smart-energy-meter-three.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
-  },
-  {
     title: "Portfolio 2.0",
     gui: Portfolio,
     description: "A modern developer portfolio built with React and Vite.",
     techStack: ["React", "Vite", "Docker"],
     liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
     githubLink: "https://github.com/Arunitdy/portfolio-2.0",
+  },
+  {
+    title: "Smart-Energy-Meter",
+    gui: Smart,
+    description: "A smart energy meter using Blynk cloud.",
+    techStack: ["React", "Blynk Cloud"],
+    liveLink: "https://smart-energy-meter-three.vercel.app/",
+    githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
   },
   {
     title: "Devcation'25- GDG On Campus IGDTUW",
