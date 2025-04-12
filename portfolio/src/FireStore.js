@@ -18,7 +18,7 @@ export const DeviceDetails = () => {
         screenHeight: window.screen.height,
         language: navigator.language,
         isMobile: isMobile ? "Mobile Device" : "Desktop Device",
-        timestamp: new Date().toISOString(), // Store timestamp
+        timestamp: new Date().toString(), // Store timestamp
       };
 
       setDeviceInfo(details);
@@ -27,6 +27,7 @@ export const DeviceDetails = () => {
       try {
         await addDoc(collection(db, "portfolio"), details);
         console.log("✅ Device info added to Firestore");
+        console.log(details.timestamp)
       } catch (error) {
         console.error("❌ Error adding device info:", error);
       }
