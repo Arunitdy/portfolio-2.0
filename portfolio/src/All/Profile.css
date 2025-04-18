@@ -301,6 +301,9 @@
     background: transparent;
     border: 2px solid var(--accent-color);
   }
+  .contact-form form {
+    margin-right: 10px;
+  } 
   
   .time {
     font-size: 10px;
