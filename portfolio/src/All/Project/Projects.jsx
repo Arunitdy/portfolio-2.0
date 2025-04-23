@@ -27,14 +27,14 @@ const projects = [
     liveLink: "",
     githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
   },
-  {
+ /* {
     title: "Portfolio 2.0",
     gui: Portfolio,
     description: "A modern developer portfolio built with React and Vite.",
     techStack: ["React", "Vite", "Docker"],
     liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
     githubLink: "https://github.com/Arunitdy/portfolio-2.0",
-  },
+  },*/
   {
     title: "Smart-Energy-Meter",
     gui: Smart,
