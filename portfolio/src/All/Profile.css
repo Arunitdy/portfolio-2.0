@@ -116,7 +116,7 @@
     padding: 1vw 1.3vw;
     border-radius: 5px;
     background: var(--gradient-primary);
-    border: none;
+    border: 1px solid #6a5acd;
     color: white;
   }
   
@@ -137,7 +137,6 @@
   }
   
   .view:hover {
-    border: 1px solid #6a5acd;
     background: transparent;
     color:var(--accent-color);
   }
