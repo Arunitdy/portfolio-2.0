@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Activity Points System",
     gui: Activity,
-    description: "A system to track student activity points with  fire store.",
+    description: "A system designed to track and manage student activity points using Firestore as the backend database. It enables students to upload proof of participation in extracurricular and co-curricular activities, while faculty members can verify submissions and assign points. The system ensures secure storage, streamlined evaluation, and easy retrieval of student achievements over time.",
     techStack: ["React", "Firebase"],
     liveLink: "https://activity-points.vercel.app/",
     githubLink: "https://github.com/1518manu/ActivityPoints.git",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Food Care",
     gui: FDMS,
-    description: "A food donation and distribution management system.",
+    description: "A web-based food donation and distribution management system designed to connect donors, distribution centers, and recipients. The platform streamlines the process of donating surplus food, tracking donations, managing distribution logistics, and ensuring timely delivery to those in need. It promotes efficient resource utilization and reduces food waste through real-time coordination and transparency.",
     techStack: ["React", "Spring Boot", "MySQL"],
     liveLink: "",
     githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
@@ -38,7 +38,7 @@ const projects = [
   {
     title: "Smart-Energy-Meter",
     gui: Smart,
-    description: "A smart energy meter using Blynk cloud.",
+    description: "A smart energy meter that monitors real-time power consumption and transmits data to the Blynk cloud platform. It allows users to remotely track energy usage through a mobile application, set alerts for abnormal consumption, and analyze usage patterns to promote energy efficiency and cost savings.",
     techStack: ["React", "Blynk Cloud"],
     liveLink: "https://smart-energy-meter-three.vercel.app/",
     githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
