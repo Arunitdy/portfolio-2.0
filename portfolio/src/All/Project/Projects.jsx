@@ -49,7 +49,7 @@ const projects = [
     description: "Devcation'25 is the technical festival organized by Google Developer Groups OnCampus - Indira Gandhi Delhi Technical University for Women that celebrates diversity in the TechForGood Domain. During the week, we have the Devcation'25 hackathon: Hack 'N' Solve. ",
     techStack: ["React", "Vite","CSS"],
     liveLink: "https://gemini-revamp-phqu.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/Soul-",
+    githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
   {
     title: "Soul",
@@ -57,7 +57,7 @@ const projects = [
     description: "Soul is an interactive love proposal web app with a dedicated chat page, built using Firebase Firestore for real-time messaging. It features a poetic interface, custom animations, and personalized response handling. Users can reply with heartfelt messages, making the experience emotionally engaging and memorable. ",
     techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
     liveLink: "https://soul-xi.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/gemini-revamp",
+    githubLink: "https://github.com/Arunitdy/Soul-",
   },
 ];
 
