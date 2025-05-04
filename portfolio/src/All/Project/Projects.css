@@ -62,6 +62,21 @@
     margin-bottom: 10px;
     border: 1px solid var(--border-primary);
   }
+  .read-more-toggle {
+    color:  var(--accent-color);
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .project-card:hover{
+    .read-more-toggle{
+      color:black;
+    }
+  }
+  
+    
+ 
+    
+  
   
   /* Tech Stack Badges */
   .tech-stack {
