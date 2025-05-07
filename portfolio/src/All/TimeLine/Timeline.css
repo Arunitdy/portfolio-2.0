@@ -59,6 +59,7 @@
 
 @media (max-width: 665px) { 
     .timeline-content {
+        msrgin-left:5%;
         width:80vw
     }
     .timeline_c {
