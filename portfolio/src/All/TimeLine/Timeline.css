@@ -65,7 +65,5 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    .timeline-item {
-        margin-left:10%;
-    }
+    
 }
