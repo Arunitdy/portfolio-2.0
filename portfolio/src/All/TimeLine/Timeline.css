@@ -64,7 +64,7 @@
     .timeline_c {
         flex-direction: column;
         align-items: flex-start;
-    .timeline_item {
+    .timeline-item {
         margin-left:10px;
     }
 }
