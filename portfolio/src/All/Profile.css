@@ -428,4 +428,7 @@
       .contact-form {
         width: 97%;
       }
+      .connect, .view {
+        border:.5px solid #6a5acd;
+      }
 }
