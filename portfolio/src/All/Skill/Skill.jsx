@@ -8,7 +8,7 @@ const skillsData = [
     skills: [
       { name: "C", percentage: 80, website: "https://www.open-std.org/jtc1/sc22/wg14/" },
       { name: "Java", percentage: 85, website: "https://www.java.com/" },
-      { name: "Python", percentage: 70, website: "https://www.python.org/" },
+      { name: "Python", percentage: 50, website: "https://www.python.org/" },
       { name: "JavaScript", percentage: 90, website: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
     ],
   },
@@ -16,18 +16,18 @@ const skillsData = [
     category: "Frameworks & Libraries",
     skills: [
       { name: "React", percentage: 85, website: "https://react.dev/" },
-      { name: "Express.js", percentage: 75, website: "https://expressjs.com/" },
-      { name: "MySQL", percentage: 80, website: "https://www.mysql.com/" },
+      { name: "Express.js", percentage: 25, website: "https://expressjs.com/" },
+      { name: "MySQL", percentage: 60, website: "https://www.mysql.com/" },
     ],
   },
   {
     category: "Tools & Platforms",
     skills: [
-      { name: "Postman", percentage: 70, website: "https://www.postman.com/" },
+      { name: "Postman", percentage: 65, website: "https://www.postman.com/" },
       { name: "Firebase", percentage: 80, website: "https://firebase.google.com/" },
       { name: "Vite", percentage: 65, website: "https://vitejs.dev/" },
-      { name: "Docker", percentage: 50, website: "https://www.docker.com/" },
-      { name: "Github", percentage: 70, website: " https://github.com/ "},
+      { name: "Docker", percentage: 30, website: "https://www.docker.com/" },
+      { name: "Github", percentage: 75, website: " https://github.com/ "},
       { name: "Git", percentage: 80, website: " https://git-scm.com/ "},
     ],
   },
