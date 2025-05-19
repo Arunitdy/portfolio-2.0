@@ -103,13 +103,13 @@ export const Profile = () => {
                     </div>
                     <div className="view_conect">
                         <a href="/Arun_resume.pdf" download><button className="view">Get Resume</button></a>
-                        <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
                     </div>
                     <div className="social">
-                        <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                        <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                        <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                        <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
+                        <a target="_blank" href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
+                        <a target="_blank" href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
+                        <a target="_blank" href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
                     </div>
                 </div>
                 <div className="Home_right tempright">
@@ -158,10 +158,10 @@ export const Profile = () => {
                             </li>
                         </ul>
                         <div className="social">
-                            <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                            <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                            <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                            <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
+                            <a target="_blank" href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
+                            <a target="_blank" href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
+                            <a target="_blank" href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
                         </div>
                     </div>
 
