@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { db, collection, addDoc } from "../src/firebase/firebaseConfig"; // Import Firestore config
+import { db, collection, addDoc } from "../src/firebase/firebaseConfig";
+import {  getDocs } from "firebase/firestore";
 
 export const DeviceDetails = () => {
   const [deviceInfo, setDeviceInfo] = useState({});
@@ -38,3 +39,27 @@ export const DeviceDetails = () => {
 
   return null; // No UI needed
 };
+
+
+
+(async function fetchPortfolioData() {
+  try {
+    const querySnapshot = await getDocs(collection(db, "portfolio"));
+    const data = [];
+
+    querySnapshot.forEach((doc) => {
+      data.push({ id: doc.id, ...doc.data() });
+    });
+
+    console.log("✅ Retrieved portfolio data:", data);
+    
+    const uniqueSet = new Set(data.map(item => item.deviceId));
+    
+    console.log("📦 Total documents:", data.length);
+    console.log("🔑 Unique deviceId count:", uniqueSet.size);
+    return data;
+  } catch (error) {
+    console.error("❌ Error retrieving portfolio data:", error);
+    return [];
+  }
+})();
