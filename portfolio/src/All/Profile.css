@@ -54,8 +54,6 @@
     padding: 1vw;
     color:var(--text-primary);
     background-color: transparent;
-    
-    font-weight: bolder;
   }
 
   .menu_ele:hover {   
