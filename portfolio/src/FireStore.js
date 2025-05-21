@@ -53,10 +53,11 @@ export const DeviceDetails = () => {
 
     console.log("✅ Retrieved portfolio data:", data);
     
-    const uniqueSet = new Set(data.map(item => item.deviceId));
+    const uniqueSet = new Set(data.map(item => item.browser));
     
     console.log("📦 Total documents:", data.length);
     console.log("🔑 Unique deviceId count:", uniqueSet.size);
+
     return data;
   } catch (error) {
     console.error("❌ Error retrieving portfolio data:", error);
