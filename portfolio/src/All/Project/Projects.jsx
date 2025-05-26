@@ -15,7 +15,7 @@ const projects = [
     title: "Activity Points System",
     gui: Activity,
     description: "A system designed to track and manage student activity points using Firestore as the backend database. It enables students to upload proof of participation in extracurricular and co-curricular activities, while faculty members can verify submissions and assign points. The system ensures secure storage, streamlined evaluation, and easy retrieval of student achievements over time.",
-    techStack: ["React", "Firebase"],
+    techStack: ["React", "Firebase", "Postman", "Cypress", "Vite"],
     liveLink: "https://activity-points.vercel.app/",
     githubLink: "https://github.com/1518manu/ActivityPoints.git",
   },
