@@ -54,7 +54,7 @@ const projects = [
   {
     title: "Soul",
     gui: Soul,
-    description: "Soul – an interactive love proposal web application featuring a real-time chat option using Firebase Firestore. Integrated a poetic UI, custom animations, and personalized response handling to create an emotionally engaging and memorable user experience. ",
+    description: "Soul an interactive love proposal web application featuring a real-time chat option using Firebase Firestore. Integrated a poetic UI, custom animations, and personalized response handling to create an emotionally engaging and memorable user experience. ",
     techStack: ["HTML", "CSS", "JavaScript", "Firebase", "emailJs.Api"],
     liveLink: "https://soul-xi.vercel.app/",
     githubLink: "https://github.com/Arunitdy/Soul-",
