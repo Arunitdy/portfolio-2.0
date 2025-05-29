@@ -23,7 +23,7 @@ const projects = [
     title: "Food Care",
     gui: FDMS,
     description: "A web-based food donation and distribution management system designed to connect donors, distribution centers, and recipients. The platform streamlines the process of donating surplus food, tracking donations, managing distribution logistics, and ensuring timely delivery to those in need. It promotes efficient resource utilization and reduces food waste through real-time coordination and transparency.",
-    techStack: ["React", "Spring Boot", "MySQL", "GeminiAI Api", "EmailJs Api],
+    techStack: ["React", "Spring Boot", "MySQL", "GeminiAI Api", "EmailJs Api"],
     liveLink: "",
     githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
   },
