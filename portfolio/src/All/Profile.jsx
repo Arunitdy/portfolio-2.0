@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 import ProfileImg from "./logos/ProfileImg.jpg";
-import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
+import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
