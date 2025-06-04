@@ -15,12 +15,12 @@ const timelineData = [
   },
   {
     year: "2024",
-    skills: ["MySQL", "DBMS", "JavaScript", "React"],
+    skills: ["MySQL", "DBMS", "JavaScript", "React", "Node.js"],
     description: "Explored databases & front-end development."
   },
   {
     year: "2025",
-    skills: ["Firebase", "Express.js"],
+    skills: ["Firebase", "Express.js", "MongoDB"],
     description: "Learning backend development with cloud services."
   },
 ];

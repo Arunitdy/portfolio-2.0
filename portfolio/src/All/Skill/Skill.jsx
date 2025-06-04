@@ -18,6 +18,8 @@ const skillsData = [
       { name: "React", percentage: 85, website: "https://react.dev/" },
       { name: "Express.js", percentage: 25, website: "https://expressjs.com/" },
       { name: "MySQL", percentage: 60, website: "https://www.mysql.com/" },
+      { name: "Node.js", percentage: 70, website: "https://nodejs.org/en/" },
+      { name: "MongoDB Atlas", percentage: 30, website: "https://www.mongodb.com/" },
     ],
   },
   {
