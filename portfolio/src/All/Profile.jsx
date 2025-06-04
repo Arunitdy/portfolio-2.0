@@ -13,6 +13,7 @@ import "../index.css";
 export const Profile = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
     const [sendMailButton, setSendMailButton] = useState(false);
+    const [profile, setProfile] = useState(ProfileImg);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -28,7 +29,12 @@ export const Profile = () => {
     useEffect(() => {
       document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
     }, [darkMode]);
-  
+    
+    useEffect(()=>{
+        console.log(darkMode)
+        setProfile(!darkMode ? ProfileImg1 : ProfileImg);
+        
+    })
 
     
 
@@ -92,7 +98,7 @@ export const Profile = () => {
             <div id ="home" className="Home">
                 <div className="Home_right right">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src={ProfileImg} alt="profile img" />
+                        <img className = "Profile_img" src={profile} alt="profile img" />
                     </div>
                 </div>
                 <div className = "Home_left">
@@ -115,7 +121,7 @@ export const Profile = () => {
                 </div>
                 <div className="Home_right tempright">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src={ProfileImg1} alt="profile img" />
+                        <img className = "Profile_img" src={profile} alt="profile img" />
                     </div>
                 </div>
             </div>
