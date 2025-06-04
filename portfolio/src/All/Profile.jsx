@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import ProfileImg from "./logos/ProfileImg.jpg";
+import ProfileImg1 from "./logos/ProfileImg1.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
@@ -114,7 +115,7 @@ export const Profile = () => {
                 </div>
                 <div className="Home_right tempright">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src={ProfileImg} alt="profile img" />
+                        <img className = "Profile_img" src={ProfileImg1} alt="profile img" />
                     </div>
                 </div>
             </div>
