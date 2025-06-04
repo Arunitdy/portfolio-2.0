@@ -13,6 +13,9 @@ import firebaseLogo from "../../logos/png/firebase-removebg-preview.png";
 import dockerLogo from "../../logos/png/docker-removebg-preview.png";
 import gitLogo from "../../logos/png/git.png";
 import gitHubLogo from "../../logos/png/github.png";
+import Express from "../../logos/png/express.png";
+import nodeLogo from "../../logos/png/node.png";
+import MongoDb from "../../logos/png/MongoDB.png";
 
 const skills = [
   { name: "C", logo: cLogo, website: "https://www.open-std.org/jtc1/sc22/wg14/" },
@@ -27,6 +30,9 @@ const skills = [
   { name: "Docker", logo: dockerLogo, website: "https://www.docker.com/" },
   { name: "Github", logo: gitHubLogo, website: " https://github.com/ "},
   { name: "Git", logo: gitLogo, website: " https://git-scm.com/ "},
+  { name: "Express", logo: Express, website: "https://expressjs.com/" },
+  { name: "Node.js", logo: nodeLogo, website: "https://nodejs.org/en/" },
+  { name: "MongoDB", logo: MongoDb, website: "https://www.mongodb.com/" }
 ];
 
 export const SkillBar = () => {
