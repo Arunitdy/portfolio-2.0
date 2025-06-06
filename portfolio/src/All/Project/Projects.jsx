@@ -52,8 +52,8 @@ const projects = [
     githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
    {
-    title: "Task Manager Pro",
-    gui: TaskManager, // Your component reference
+    title: "To Do List",
+    gui: GDG,
     description: "A full-stack productivity application with secure user authentication and real-time task management. Implements JWT authentication for secure access, allowing users to create, organize, and track tasks with instant UI updates. Features optimistic rendering for seamless interactions and automatic sync with cloud database.",
     techStack: [
       "React (Vite)", 
