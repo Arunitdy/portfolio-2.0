@@ -51,6 +51,20 @@ const projects = [
     liveLink: "https://gemini-revamp-phqu.vercel.app/",
     githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
+   {
+    title: "Task Manager Pro",
+    gui: TaskManager, // Your component reference
+    description: "A full-stack productivity application with secure user authentication and real-time task management. Implements JWT authentication for secure access, allowing users to create, organize, and track tasks with instant UI updates. Features optimistic rendering for seamless interactions and automatic sync with cloud database.",
+    techStack: [
+      "React (Vite)", 
+      "Express.js", 
+      "MongoDB Atlas", 
+      "JWT Auth",
+      "Axios"
+    ],
+    liveLink: "https://to-do-list-five-delta-65.vercel.app/",
+    githubLink: "https://github.com/Arunitdy/ToDoList"
+  },
   {
     title: "Soul",
     gui: Soul,
