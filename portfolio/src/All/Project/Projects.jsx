@@ -60,6 +60,7 @@ const projects = [
       "Express.js", 
       "MongoDB Atlas", 
       "JWT Auth",
+      "Postman",
       "Axios"
     ],
     liveLink: "https://to-do-list-five-delta-65.vercel.app/",
