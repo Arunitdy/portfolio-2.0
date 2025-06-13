@@ -49,7 +49,7 @@ const projects = [
     gui: GDG,
     description: "Devcation'25 is the technical festival organized by Google Developer Groups OnCampus - Indira Gandhi Delhi Technical University for Women that celebrates diversity in the TechForGood Domain. During the week, we have the Devcation'25 hackathon: Hack 'N' Solve. ",
     techStack: ["React", "Vite","CSS"],
-    liveLink: "https://gemini-revamp-phqu.vercel.app/",
+    liveLink: "https://gemini-revamp.vercel.app/",
     githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
    {
