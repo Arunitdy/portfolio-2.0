@@ -10,7 +10,7 @@ const timelineData = [
   },
   {
     year: "2023",
-    skills: ["DSA", "Java", "OOP"],
+    skills: ["DSA", "Java", "OOPS"],
     description: "Dived into problem-solving with Java & Object-Oriented Programming."
   },
   {

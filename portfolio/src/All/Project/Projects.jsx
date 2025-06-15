@@ -7,7 +7,8 @@ import Portfolio from "../logos/projectGui/portfolio.png";
 import Activity from "../logos/projectGui/activity.png";
 import Smart from "../logos/projectGui/smart.png";
 import Soul from "../logos/projectGui/soul.png";
-import GDG from "../logos/projectGui/GDG.png"
+import GDG from "../logos/projectGui/GDG.png";
+import task from "../logos/projectGui/task.png";
 
 // Projects Data
 const projects = [
@@ -48,12 +49,12 @@ const projects = [
     gui: GDG,
     description: "Devcation'25 is the technical festival organized by Google Developer Groups OnCampus - Indira Gandhi Delhi Technical University for Women that celebrates diversity in the TechForGood Domain. During the week, we have the Devcation'25 hackathon: Hack 'N' Solve. ",
     techStack: ["React", "Vite","CSS"],
-    liveLink: "https://gemini-revamp-phqu.vercel.app/",
+    liveLink: "https://gemini-revamp.vercel.app/",
     githubLink: "https://github.com/Arunitdy/gemini-revamp",
   },
    {
     title: "To Do List",
-    gui: GDG,
+    gui: task,
     description: "A full-stack productivity application with secure user authentication and real-time task management. Implements JWT authentication for secure access, allowing users to create, organize, and track tasks with instant UI updates. Features optimistic rendering for seamless interactions and automatic sync with cloud database.",
     techStack: [
       "React (Vite)", 
