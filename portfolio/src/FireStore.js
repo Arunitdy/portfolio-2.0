@@ -39,8 +39,7 @@ export const DeviceDetails = () => {
 
   return null; // No UI needed
 };
-
-(async function fetchPortfolioData() {
+(async function fetchUniqueDevices() {
   try {
     const querySnapshot = await getDocs(collection(db, "portfolio"));
     const data = [];
@@ -51,18 +50,24 @@ export const DeviceDetails = () => {
 
     console.log("✅ Retrieved portfolio data:", data);
 
-    // Combine relevant properties into a single unique string
-    const uniqueSet = new Set(
-      data.map(item =>
-        `${item.browser}|${item.timestamp}|${item.os}|${item.screenWidth}|${item.screenHeight}|${item.language}|${item.isMobile}`
-      )
-    );
+    // Track seen combinations
+    const seen = new Set();
+    const uniqueDevices = [];
+
+    for (const item of data) {
+      const signature = `${item.browser}`;
+      
+      if (!seen.has(signature)) {
+        seen.add(signature);
+        uniqueDevices.push(item);
+      }
+    }
 
     console.log("📦 Total documents:", data.length);
-    console.log("🔑 Unique device signature count:", uniqueSet.size);
-    console.log("🔑 Unique device signatures:", uniqueSet);
+    console.log("🔑 Unique device count:", uniqueDevices.length);
+    console.log("📄 Unique devices:", uniqueDevices);
 
-    return data;
+    return uniqueDevices;
   } catch (error) {
     console.error("❌ Error retrieving portfolio data:", error);
     return [];
