@@ -40,8 +40,6 @@ export const DeviceDetails = () => {
   return null; // No UI needed
 };
 
-
-
 (async function fetchPortfolioData() {
   try {
     const querySnapshot = await getDocs(collection(db, "portfolio"));
@@ -52,12 +50,17 @@ export const DeviceDetails = () => {
     });
 
     console.log("✅ Retrieved portfolio data:", data);
-    
-    const uniqueSet = new Set(data.map(item => item.browser, item.timestamp, item.os, item.screenWidth, item.screenHeight, item.language, item.isMobile));
-    
+
+    // Combine relevant properties into a single unique string
+    const uniqueSet = new Set(
+      data.map(item =>
+        `${item.browser}|${item.timestamp}|${item.os}|${item.screenWidth}|${item.screenHeight}|${item.language}|${item.isMobile}`
+      )
+    );
+
     console.log("📦 Total documents:", data.length);
-    console.log("🔑 Unique deviceId count:", uniqueSet.size);
-    console.log("🔑 Unique :", uniqueSet);
+    console.log("🔑 Unique device signature count:", uniqueSet.size);
+    console.log("🔑 Unique device signatures:", uniqueSet);
 
     return data;
   } catch (error) {
