@@ -57,7 +57,7 @@ export const DeviceDetails = () => {
     
     console.log("📦 Total documents:", data.length);
     console.log("🔑 Unique deviceId count:", uniqueSet.size);
-    console.log("🔑 Unique :", uniqueSet.size);
+    console.log("🔑 Unique :", uniqueSet);
 
     return data;
   } catch (error) {
