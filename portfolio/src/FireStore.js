@@ -53,7 +53,7 @@ export const DeviceDetails = () => {
 
     console.log("✅ Retrieved portfolio data:", data);
     
-    const uniqueSet = new Set(data.map(item => item.browser));
+    const uniqueSet = new Set(data.map(item => item.timestamp));
     
     console.log("📦 Total documents:", data.length);
     console.log("🔑 Unique deviceId count:", uniqueSet.size);
