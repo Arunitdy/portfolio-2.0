@@ -55,7 +55,7 @@ export const DeviceDetails = () => {
     const uniqueDevices = [];
 
     for (const item of data) {
-      const signature = `${item.browser}`;
+      const signature = `${item.browser}`; // Add more fields if needed (e.g., item.os + item.browser)
       
       if (!seen.has(signature)) {
         seen.add(signature);
@@ -63,9 +63,13 @@ export const DeviceDetails = () => {
       }
     }
 
+    // ✅ Sort by date (newest to oldest)
+    uniqueDevices.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+
     console.log("📦 Total documents:", data.length);
     console.log("🔑 Unique device count:", uniqueDevices.length);
-    console.log("📄 Unique devices:", uniqueDevices);
+    console.log("📄 Unique devices (sorted):", uniqueDevices);
 
     return uniqueDevices;
   } catch (error) {
