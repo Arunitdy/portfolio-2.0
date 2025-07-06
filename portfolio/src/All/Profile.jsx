@@ -110,7 +110,7 @@ export const Profile = () => {
                     </div>
                     <div className="view_conect">
 <a href="/Arun-M-Resume-20250615.pdf" target="_blank" rel="noopener noreferrer">
-  <div className="view">Get Resume</div>
+  <button className="view">Get Resume</button>
 </a>
                         <a href="/Arun-M-Resume-20250615.pdf" download><button className="view">Get Resume</button></a>
                         <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
