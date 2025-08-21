@@ -106,7 +106,7 @@ export const Profile = () => {
                     <h1>Arun M</h1>
                     <h2>Web Developer</h2>
                     <div className="Home_about">
-                        <p>I am a Web Developer with experience in building websites and web applications. I specialize in JavaScript and have professional experience working with React. I also have experience working with Node.js, Express.js, and MongoDB. I am passionate about learning new technologies and building products that solve real-world problems.</p>
+                        <p>I am a Software Engineer with experience in developing full-stack applications, data-driven solutions, and cloud-based systems. My core expertise lies in JavaScript and modern frameworks like React for frontend, along with Node.js, Express.js, and MongoDB for backend development. In addition, I have practical experience in Machine Learning, working with Python libraries and building models that solve analytical and predictive problems. I am also familiar with cloud platforms and deployment practices, enabling me to design and scale applications efficiently. With a strong interest in continuous learning, I bring adaptability to roles spanning Software Development, Data Engineering, Cloud Engineering, and Machine Learning.</p>
                     </div>
                     <div className="view_conect">
 <a href="/Arun-M-Resume-20250615.pdf" target="_blank" rel="noopener noreferrer">
