@@ -104,7 +104,7 @@ export const Profile = () => {
                 <div className = "Home_left">
                     <div className="Hello">Hello, my name is</div>
                     <h1>Arun M</h1>
-                    <h2>Web Developer</h2>
+                    <h2>Software Developer</h2>
                     <div className="Home_about">
                         <p>I am a Software Engineer with experience in developing full-stack applications, data-driven solutions, and cloud-based systems. My core expertise lies in JavaScript and modern frameworks like React for frontend, along with Node.js, Express.js, and MongoDB for backend development. In addition, I have practical experience in Machine Learning, working with Python libraries and building models that solve analytical and predictive problems. I am also familiar with cloud platforms and deployment practices, enabling me to design and scale applications efficiently. With a strong interest in continuous learning, I bring adaptability to roles spanning Software Development, Data Engineering, Cloud Engineering, and Machine Learning.</p>
                     </div>
