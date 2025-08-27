@@ -106,7 +106,12 @@ export const Profile = () => {
                     <h1>Arun M</h1>
                     <h2>Software Developer</h2>
                     <div className="Home_about">
-                        <p>I am a Software Engineer with experience in building full-stack applications, data-driven solutions, and cloud-based systems. I have worked with modern frontend frameworks, backend development, databases, and deployment practices, along with hands-on exposure to Machine Learning and data analysis. With strong adaptability and a passion for continuous learning, I am open to roles across Software Development, Data Engineering, Cloud Engineering, and Machine Learning.</p>
+                        <p>
+I am a Software Engineer experienced in building full-stack applications, data-driven solutions, and cloud systems.
+I also have hands-on exposure to Machine Learning and data analysis.
+With strong adaptability and a passion for learning, I bring versatility across Software, Data, Cloud, and ML roles.
+
+</p>
                     </div>
                     <div className="view_conect">
 <a href="/Arun-M-Resume-20250615.pdf" target="_blank" rel="noopener noreferrer">
