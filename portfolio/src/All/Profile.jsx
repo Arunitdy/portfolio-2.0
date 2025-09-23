@@ -109,7 +109,7 @@ export const Profile = () => {
                         <p>I am a Web Developer with experience in building websites and web applications. I specialize in JavaScript and have professional experience working with React. I also have experience working with Node.js, Express.js, and MongoDB. I am passionate about learning new technologies and building products that solve real-world problems.</p>
                     </div>
                     <div className="view_conect">
-                        <a href="/Arun-M-Resume-20250615.pdf" download><button className="view">Get Resume</button></a>
+                        <a href="/Arun_M-Resume.pdf" download><button className="view">Get Resume</button></a>
                         <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
                     </div>
                     <div className="social">
