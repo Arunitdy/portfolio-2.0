@@ -20,8 +20,8 @@ const timelineData = [
   },
   {
     year: "2025",
-    skills: ["Firebase", "Express.js", "MongoDB"],
-    description: "Learning backend development with cloud services."
+    skills: ["Firebase", "Express.js", "MongoDB", "AI/ML"],
+    description: "Learning backend development with cloud services and ML model"
   },
 ];
 

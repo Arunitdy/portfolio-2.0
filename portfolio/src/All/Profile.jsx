@@ -104,9 +104,13 @@ export const Profile = () => {
                 <div className = "Home_left">
                     <div className="Hello">Hello, my name is</div>
                     <h1>Arun M</h1>
-                    <h2>Web Developer</h2>
+                    <h2>Software Developer</h2>
                     <div className="Home_about">
-                        <p>I am a Web Developer with experience in building websites and web applications. I specialize in JavaScript and have professional experience working with React. I also have experience working with Node.js, Express.js, and MongoDB. I am passionate about learning new technologies and building products that solve real-world problems.</p>
+<p>
+I am a Software Engineer experienced in building full-stack applications, data-driven solutions, and cloud systems.
+I also have hands-on exposure to Machine Learning and data analysis.
+With strong adaptability and a passion for learning, I bring versatility across Software, Data, Cloud, and ML roles.
+</p>
                     </div>
                     <div className="view_conect">
                         <a href="/Arun_M-Resume.pdf" download><button className="view">Get Resume</button></a>
