@@ -19,7 +19,8 @@ export const Profile = () => {
         email: "",
         message: ""
     });
-    const [darkMode, setDarkMode] = useState(
+    
+    const [darkMode, setDarkMode] = useState( 
         window.matchMedia("(prefers-color-scheme: dark)").matches);
 
     const toggleTheme = () => {
