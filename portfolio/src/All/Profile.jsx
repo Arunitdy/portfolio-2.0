@@ -108,7 +108,7 @@ export const Profile = () => {
                     <div className="Home_about">
 <p>
 I am a Software Engineer experienced in building full-stack applications, data-driven solutions, and cloud systems.
-I also have hands-on exposure to Machine Learning and data analysis.
+I also have hands-on exposure to Machine Learning and artificial intelligence.
 With strong adaptability and a passion for learning, I bring versatility across Software, Data, Cloud, and ML roles.
 </p>
                     </div>

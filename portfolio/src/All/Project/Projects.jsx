@@ -51,7 +51,7 @@ const projects = [
     techStack: ["React", "Vite","CSS"],
     liveLink: "https://gemini-revamp.vercel.app/",
     githubLink: "https://github.com/Arunitdy/gemini-revamp",
-  },
+  },/*
    {
     title: "To Do List",
     gui: task,
@@ -66,7 +66,7 @@ const projects = [
     ],
     liveLink: "https://to-do-list-five-delta-65.vercel.app/",
     githubLink: "https://github.com/Arunitdy/ToDoList"
-  },
+  },*/
   {
     title: "Soul",
     gui: Soul,
