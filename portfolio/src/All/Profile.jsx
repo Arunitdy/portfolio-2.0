@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 import ProfileImg from "./logos/ProfileImg.jpg";
-import ProfileImg1 from "./logos/ProfileImg1.jpg";
+import profile2 from "./logos/profile.png";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
@@ -32,7 +32,7 @@ export const Profile = () => {
     
     useEffect(()=>{
         console.log(darkMode)
-        setProfile(!darkMode ? ProfileImg1 : ProfileImg);
+        setProfile(!darkMode ? profile2 : ProfileImg);
         
     })
 
