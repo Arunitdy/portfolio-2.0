@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 import ProfileImg from "./logos/ProfileImg.jpg";
-import ProfileImg1 from "./logos/ProfileImg1.png";
+import ProfileImg1 from "./logos/ProfileImg1.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
@@ -19,7 +19,7 @@ export const Profile = () => {
         email: "",
         message: ""
     });
-    
+
     const [darkMode, setDarkMode] = useState( 
         window.matchMedia("(prefers-color-scheme: dark)").matches);
 
