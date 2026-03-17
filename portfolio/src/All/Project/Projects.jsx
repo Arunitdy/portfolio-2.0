@@ -13,6 +13,20 @@ import task from "../logos/projectGui/task.png";
 // Projects Data
 const projects = [
   {
+    title: "Graph Neural Network-Based fMRI Analysis for Schizophrenia Detection",
+    description: "Proposed a machine learning framework for early schizophrenia detection using functional MRI (fMRI) data. Developed a Graph Neural Network (GNN) model by constructing Functional Connectivity (FC) matrices to capture brain region interactions. Applied preprocessing techniques, feature extraction, and graph-based learning to improve classification accuracy. The study demonstrates how deep learning and neuroimaging can be combined to assist in clinical diagnosis and understanding of neurological disorders.",
+    techStack: ["Python", "PyTorch", "PyTorch Geometric", "NumPy", "Pandas", "Scikit-learn", "Google Colab"],
+    keyHighlights: [
+      "Built Functional Connectivity matrices from fMRI data",
+      "Implemented Graph Convolutional Network (GCN)",
+      "Applied data preprocessing and normalization techniques",
+      "Improved classification performance using graph-based features",
+      "Focused on real-world healthcare application"
+    ],
+    githubLink: "Add if available",
+    paperLink: "Add if published"
+  },
+  {
     title: "Activity Points System",
     gui: Activity,
     description: "A system designed to track and manage student activity points using Firestore as the backend database. It enables students to upload proof of participation in extracurricular and co-curricular activities, while faculty members can verify submissions and assign points. The system ensures secure storage, streamlined evaluation, and easy retrieval of student achievements over time.",
