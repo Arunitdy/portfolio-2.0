@@ -11,6 +11,9 @@ import GDG from "../logos/projectGui/GDG.png";
 import task from "../logos/projectGui/task.png";
 
 // Projects Data
+
+
+
 const projects = [
   {
     title: "Graph Neural Network-Based fMRI Analysis for Schizophrenia Detection",
