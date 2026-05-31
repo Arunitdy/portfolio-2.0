@@ -9,6 +9,8 @@ import Smart from "../logos/projectGui/smart.png";
 import Soul from "../logos/projectGui/soul.png";
 import GDG from "../logos/projectGui/GDG.png";
 import task from "../logos/projectGui/task.png";
+import Fmri from "../logos/projectGui/fmri.png";
+
 
 // Projects Data
 
@@ -17,6 +19,7 @@ import task from "../logos/projectGui/task.png";
 const projects = [
   {
     title: "Graph Neural Network-Based fMRI Analysis for Schizophrenia Detection",
+    gui: Fmri,
     description: "Proposed a machine learning framework for early schizophrenia detection using functional MRI (fMRI) data. Developed a Graph Neural Network (GNN) model by constructing Functional Connectivity (FC) matrices to capture brain region interactions. Applied preprocessing techniques, feature extraction, and graph-based learning to improve classification accuracy. The study demonstrates how deep learning and neuroimaging can be combined to assist in clinical diagnosis and understanding of neurological disorders.",
     techStack: ["Python", "PyTorch", "PyTorch Geometric", "NumPy", "Pandas", "Scikit-learn", "Google Colab"],
     keyHighlights: [
@@ -26,7 +29,7 @@ const projects = [
       "Improved classification performance using graph-based features",
       "Focused on real-world healthcare application"
     ],
-    githubLink: "Add if available",
+    githubLink: "https://github.com/Arunitdy/fMRI-based-Schizophrenia-Detection-using-AI",
     paperLink: "Add if published"
   },
   {
