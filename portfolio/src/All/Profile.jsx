@@ -5,10 +5,10 @@ import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
 import { Timeline } from "./TimeLine/Timeline";
 import { Skills } from "./Skill/Skill";
 import { Projects } from "./Project/Projects"; 
+import { profileData } from "../data";
 import emailjs from "@emailjs/browser";
 import "./Profile.css";
 import "../index.css";
-
 
 export const Profile = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -56,7 +56,7 @@ export const Profile = () => {
             return;
         }
 
-        emailjs.init("v1NuNxKifUW2QtRAC");
+        emailjs.init(profileData.emailJs.userId);
 
         let params = {
             name: formData.name,
@@ -67,7 +67,7 @@ export const Profile = () => {
                     Message: ${formData.message}`
         };
 
-        emailjs.send("service_r5z14fm", "template_ew8u8u5", params)
+        emailjs.send(profileData.emailJs.serviceId, profileData.emailJs.templateId, params)
             .then(response => {
                 console.log("SUCCESS!", response.status, response.text);
                 alert("Mail sent successfully!");
@@ -86,13 +86,13 @@ export const Profile = () => {
 
         <div className="profile">
             <div className = "header">
-                <h1>ARUN M</h1>
+                <h1>{profileData.name}</h1>
                     <div className="menu">
-                        <a href="#home"><button className="menu_ele">Home</button></a>
-                        <a href="#about"><button className="menu_ele">About</button></a>
-                        <a href="#skills"><button className="menu_ele">Skill</button></a>
-                        <a href="#projects"><button className="menu_ele">Projects</button></a>
-                        <a href="#contact"><button className="menu_ele">Contact</button></a>
+                        {profileData.menuItems.map((item, index) => (
+                            <a key={index} href={item.href}>
+                                <button className="menu_ele">{item.label}</button>
+                            </a>
+                        ))}
                     </div>
             </div>
 
@@ -103,25 +103,33 @@ export const Profile = () => {
                     </div>
                 </div>
                 <div className = "Home_left">
-                    <div className="Hello">Hello, my name is</div>
-                    <h1>Arun M</h1>
-                    <h2>Software Developer</h2>
+                    <div className="Hello">{profileData.greeting}</div>
+                    <h1>{profileData.displayName}</h1>
+                    <h2>{profileData.role}</h2>
                     <div className="Home_about">
-<p>
-I am a Software Engineer experienced in building full-stack applications, data-driven solutions, and cloud systems.
-I also have hands-on exposure to Machine Learning and artificial intelligence.
-With strong adaptability and a passion for learning, I bring versatility across Software, Data, Cloud, and ML roles.
-</p>
+                        <p>
+                        {profileData.aboutIntro}
+                        {profileData.aboutDetails}
+                        {profileData.aboutSummary}
+                        </p>
                     </div>
                     <div className="view_conect">
-                        <a href="/Arun_M-Resume.pdf" download><button className="view">Get Resume</button></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
+                        <a href={profileData.heroButtons.resume.href} download>
+                            <button className="view">{profileData.heroButtons.resume.label}</button>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href={profileData.heroButtons.connect.href}>
+                            <button className="connect">{profileData.heroButtons.connect.label}</button>
+                        </a>
                     </div>
                     <div className="social">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                        {profileData.socialLinks.map((link, index) => {
+                          const Icon = link.icon;
+                          return (
+                            <a key={index} target="_blank" rel="noopener noreferrer" href={link.href}>
+                              <Icon className="icon" />
+                            </a>
+                          );
+                        })}
                     </div>
                 </div>
                 <div className="Home_right tempright">
@@ -132,17 +140,16 @@ With strong adaptability and a passion for learning, I bring versatility across 
             </div>
 
             <div id= "about" className="About">
-                <h1>About <span>Me</span></h1>
+                <h1>{profileData.about.heading} <span>{profileData.about.headingHighlight}</span></h1>
                 <p className="text-center ">
-                    My journey in programming has been exciting! Here’s a quick look at my progress over the years:
+                    {profileData.about.intro}
                 </p>
                 <div className="About_content">
                     <div className="WhoIam">
                         <h2><span>Who</span> I am</h2>
                         <p>
-                            I am a passionate web developer specializing in <span>React, JavaScript</span>, and backend technologies.
-                            With experience in building full-stack applications, I enjoy solving problems, optimizing 
-                            performance, and creating user-friendly interfaces.
+                            {profileData.about.summary}
+                            {profileData.about.details}
                         </p>
                     </div>
                     <Timeline  className="time_line"/>
@@ -156,35 +163,56 @@ With strong adaptability and a passion for learning, I bring versatility across 
             <div id ="contact" className="footer">
                 <div className="footer-container">
                     <div className="contact-info">
-                        <h2>Contact Information</h2>
+                        <h2>{profileData.contact.heading}</h2>
                         <p>
-                            Feel free to reach out through any of the following channels. I'm always open to discussing new projects,
-                            team collaborations, or opportunities to be a part of your vision.
+                            {profileData.contact.description}
                         </p>
                         <ul>
-                            <li>
-                            <strong>Email:</strong> arunmundakkal003@gmail.com
-                            </li>
-                            <li>
-                            <strong>Phone:</strong> +91 9995024963
-                            </li>
+                            {profileData.contact.details.map((detail, index) => (
+                                <li key={index}>
+                                    <strong>{detail.label}</strong> {detail.value}
+                                </li>
+                            ))}
                         </ul>
                         <div className="social">
-                            <a target="_blank" href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                            <a target="_blank" href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                            <a target="_blank" href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                            <a target="_blank" href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                            {profileData.socialLinks.map((link, index) => {
+                              const Icon = link.icon;
+                              return (
+                                <a key={index} target="_blank" rel="noopener noreferrer" href={link.href}>
+                                  <Icon className="icon" />
+                                </a>
+                              );
+                            })}
                         </div>
                     </div>
 
                     {/* Contact Form */}
                     <div className="contact-form">
-                        <h2>Send Me a Message</h2>
+                        <h2>{profileData.contact.form.heading}</h2>
                         <form onSubmit={sendMail} >
-                            <input type="text" placeholder="Your Name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
-                            <input type="email" placeholder="Your Email" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
-                            <textarea placeholder="Hello, I’d like to talk about..." required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
-                            <button type="submit"  disabled = {sendMailButton}>{ sendMailButton ? "processing" : "Send Message"}</button>
+                            <input
+                              type="text"
+                              placeholder={profileData.contact.form.namePlaceholder}
+                              required
+                              value={formData.name}
+                              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            />
+                            <input
+                              type="email"
+                              placeholder={profileData.contact.form.emailPlaceholder}
+                              required
+                              value={formData.email}
+                              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            />
+                            <textarea
+                              placeholder={profileData.contact.form.messagePlaceholder}
+                              required
+                              value={formData.message}
+                              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                            ></textarea>
+                            <button type="submit" disabled={sendMailButton}>
+                              {sendMailButton ? profileData.contact.form.processingLabel : profileData.contact.form.submitLabel}
+                            </button>
                         </form>
                         <div className="time_switch">
                             <p className="time">

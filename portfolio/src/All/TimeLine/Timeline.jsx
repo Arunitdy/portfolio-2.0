@@ -1,29 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { timelineData } from "../../data";
 import "./Timeline.css";
-
-const timelineData = [
-  {
-    year: "2022",
-    skills: ["C Programming"],
-    description: "Started learning foundational programming concepts."
-  },
-  {
-    year: "2023",
-    skills: ["DSA", "Java", "OOPS"],
-    description: "Dived into problem-solving with Java & Object-Oriented Programming."
-  },
-  {
-    year: "2024",
-    skills: ["MySQL", "DBMS", "JavaScript", "React", "Node.js"],
-    description: "Explored databases & front-end development."
-  },
-  {
-    year: "2025",
-    skills: ["Firebase", "Express.js", "MongoDB", "AI/ML"],
-    description: "Learning backend development with cloud services and ML model"
-  },
-];
 
 export const Timeline = () => {
   return (
