@@ -9,7 +9,7 @@ import Smart from "../logos/projectGui/smart.png";
 import Soul from "../logos/projectGui/soul.png";
 import GDG from "../logos/projectGui/GDG.png";
 import task from "../logos/projectGui/task.png";
-import Fmri from "../logos/projectGui/fmri.png";
+import Fmri from "../logos/projectGui/Fmri.jpg";
 
 
 // Projects Data
