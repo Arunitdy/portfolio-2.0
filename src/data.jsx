@@ -218,7 +218,7 @@ export const profileData = {
       icon: FaFacebook,
     },
     {
-      href: "https://www.instagram.com/arun_mundakkal/",
+      href: "https://www.instagram.com/arrun__m/",
       icon: FaInstagram,
     },
   ],
